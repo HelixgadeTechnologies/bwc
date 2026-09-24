@@ -11,9 +11,9 @@ interface BrandLogoProps {
 
 export function BrandLogo({ className = "", light = true, size = "md" }: BrandLogoProps) {
   const heightClasses = {
-    sm: "h-9 sm:h-10",
-    md: "h-11 sm:h-12 md:h-13",
-    lg: "h-14 sm:h-16",
+    sm: "h-13 sm:h-15",
+    md: "h-16 sm:h-18 md:h-20",
+    lg: "h-20 sm:h-24",
   }[size];
 
   return (
@@ -21,8 +21,8 @@ export function BrandLogo({ className = "", light = true, size = "md" }: BrandLo
       <Image
         src="/bwc.png"
         alt="Beyond Worship Center"
-        width={180}
-        height={156}
+        width={270}
+        height={234}
         className={`${heightClasses} w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm`}
         priority
       />
