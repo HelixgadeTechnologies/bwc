@@ -35,7 +35,7 @@ export default function TestimonyPage() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/welcome-cover.png"
+            src="/images/testimony.JPG"
             alt="Share your testimony at Beyond Worship Center"
             fill
             priority

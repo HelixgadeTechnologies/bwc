@@ -19,7 +19,7 @@ const heroSlides = [
     alt: "Beyond Worship Center - Community & Fellowship",
   },
   {
-    image: "/images/welcome-cover-2.png",
+    image: "/images/souledout.JPG",
     alt: "Beyond Worship Center - Worship & Word",
   },
 ];
