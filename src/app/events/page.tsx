@@ -55,7 +55,7 @@ const allEvents = [
     category: "Worship Service",
     badgeColor: "#077BAE",
     date: "Every Sunday",
-    time: "8:00 AM & 10:30 AM",
+    time: "10:00 AM",
     location: "Beyond Worship Center (Port Harcourt)",
     description:
       "Experience high-energy worship, revelation teachings, and the love of God in a vibrant fellowship atmosphere.",

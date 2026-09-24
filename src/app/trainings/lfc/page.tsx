@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { GraduationCap, Calendar, Clock, MapPin, CheckCircle, ArrowRight } from "lucide-react";
 
 export default function LFCPage() {
@@ -18,10 +19,24 @@ export default function LFCPage() {
   };
 
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-0 pb-20">
       {/* Header */}
-      <section className="bg-gradient-to-br from-[#212120] to-[#121211] text-white py-20 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
-        <div className="container-max max-w-4xl mx-auto relative z-10">
+      <section className="relative min-h-[480px] flex items-center justify-center text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/workers.jpg"
+            alt="BWC Training — Workers"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#212120]/90 via-[#212120]/70 to-[#212120]/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#212120]/80 via-transparent to-black/30" />
+        </div>
+
+        <div className="container-max max-w-4xl mx-auto relative z-10 text-center px-4 sm:px-6 lg:px-8 py-24">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold text-xs tracking-widest uppercase mb-6">
             <GraduationCap className="w-4 h-4" />
             <span>Spiritual Grounding</span>

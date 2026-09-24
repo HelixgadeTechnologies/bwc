@@ -94,7 +94,7 @@ export function Footer() {
             <div className="space-y-3 text-sm text-gray-300">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <p className="font-semibold text-white">Sunday</p>
-                <p className="text-xs text-secondary font-semibold mt-0.5">8:00 AM &amp; 10:30 AM</p>
+                <p className="text-xs text-secondary font-semibold mt-0.5">10:00 AM</p>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <p className="font-semibold text-white">Wednesday</p>

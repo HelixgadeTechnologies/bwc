@@ -28,7 +28,7 @@ const SERVICE_TIMES = [
   {
     emoji: "🙏",
     title: "Sunday Service",
-    time: "Sunday 8:00 AM & 10:30 AM",
+    time: "Sunday 10:00 AM",
     location: "BWC Headquarters, Port Harcourt",
   },
   {
@@ -123,7 +123,7 @@ export default function ContactPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/about.jpg"
+            src="/images/contact.jpg"
             alt="Beyond Worship Center — Contact Us"
             fill
             priority
@@ -238,7 +238,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-dark mb-1">
                       Service Hours
                     </h3>
-                    <p className="text-gray-600">Sunday: 8:00 AM &amp; 10:30 AM</p>
+                    <p className="text-gray-600">Sunday: 10:00 AM</p>
                     <p className="text-gray-600">Wednesday: 6:00 PM</p>
                   </div>
                 </div>

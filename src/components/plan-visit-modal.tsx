@@ -14,7 +14,7 @@ export function PlanVisitModal({ isOpen, onClose }: PlanVisitModalProps) {
     name: "",
     email: "",
     phone: "",
-    service: "8:00 AM (First Service)",
+    service: "10:00 AM",
     location: "112 Eliozu Airport Road Bypass, opposite Harritex Services, Eligbolo, Port Harcourt, Nigeria",
     guestsCount: "1",
     hasKids: false,
@@ -137,8 +137,7 @@ export function PlanVisitModal({ isOpen, onClose }: PlanVisitModalProps) {
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-dark bg-white"
                   >
-                    <option>8:00 AM (First Service)</option>
-                    <option>10:30 AM (Second Service)</option>
+                    <option>Sunday 10:00 AM</option>
                     <option>Wednesday 6:00 PM (Midweek Service)</option>
                   </select>
                 </div>
