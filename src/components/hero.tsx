@@ -128,13 +128,15 @@ export function Hero({ onPlanVisitClick, onWatchOnlineClick }: HeroProps) {
               Join Us This Sunday
             </button>
 
-            <button
-              onClick={onWatchOnlineClick}
+            <a
+              href="https://www.youtube.com/@beyondworshipcentrebwc"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border border-white/30 focus:ring-white transform hover:scale-105 active:scale-95 px-8 sm:px-10 py-4 sm:py-5 text-lg sm:text-xl rounded-full min-w-[280px] sm:min-w-[220px] cursor-pointer"
             >
               <Play className="w-5 h-5 fill-current" />
               Watch Online
-            </button>
+            </a>
           </div>
         </div>
       </div>

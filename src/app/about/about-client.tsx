@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Compass, Target, Sparkles, ChevronDown, ChevronUp, ArrowRight, Calendar, Users, MapPin, Heart } from "lucide-react";
+import { Compass, Target, Sparkles, ChevronDown, ChevronUp, ArrowRight, Calendar, Users, MapPin, Heart, BookOpen } from "lucide-react";
 import { PlanVisitModal } from "@/components/plan-visit-modal";
 import { BrandLogo } from "@/components/brand-logo";
 
@@ -54,9 +54,9 @@ export function AboutClient() {
             transition={{ duration: 0.6 }}
             className="mb-6"
           >
-            <span className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 backdrop-blur-md text-white text-sm font-semibold border border-white/20 tracking-wide shadow-lg">
-              <span>🏠</span>
-              <span>Our Story</span>
+            <span className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary/20 backdrop-blur-md text-secondary text-xs sm:text-sm font-bold border border-secondary/40 tracking-widest uppercase shadow-lg">
+              <Sparkles className="w-4 h-4" />
+              <span>Our Mantra: Relate • Restore • Reign</span>
             </span>
           </motion.div>
 
@@ -74,9 +74,9 @@ export function AboutClient() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg sm:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed font-light mb-8"
+            className="text-lg sm:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed font-light mb-8"
           >
-            Explore our story, mission, and the community that makes us who we are.
+            We are a Christ Centred community with a passion to build and restore relationships, raising them as believers through the gospel of Christ.
           </motion.p>
         </div>
 
@@ -108,11 +108,20 @@ export function AboutClient() {
             {/* Story Copy */}
             <div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 text-primary font-semibold text-xs tracking-wider uppercase mb-4">
-                <span>The Mandate</span>
+                <span>Who We Are</span>
               </div>
-              <h2 className="text-3xl sm:text-5xl font-display font-bold text-dark mb-6">
-                Our Story
+              <h2 className="text-3xl sm:text-5xl font-display font-bold text-dark mb-4">
+                Our Mandate &amp; Story
               </h2>
+
+              <div className="p-6 rounded-2xl bg-primary/5 border border-primary/15 mb-6">
+                <span className="text-xs font-bold text-primary tracking-widest uppercase block mb-1">
+                  Who We Are
+                </span>
+                <p className="text-lg sm:text-xl font-display font-bold text-dark leading-relaxed">
+                  We are a Christ Centred community with a passion to build and restore relationships, raising them as believers through the gospel of Christ.
+                </p>
+              </div>
 
               <div className="space-y-4 text-base sm:text-lg text-gray-1 leading-relaxed">
                 <p>
@@ -201,43 +210,129 @@ export function AboutClient() {
         </div>
       </section>
 
-      {/* 3. Mission & Vision Section */}
+      {/* 3. Our Mantra, Mission, Vision & Purpose Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-max">
-          <div className="text-center mb-14 max-w-2xl mx-auto">
-            <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-semibold text-xs tracking-widest uppercase mb-3">
-              Purpose &amp; Direction
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-display font-bold text-dark">
-              Mission &amp; Vision
-            </h2>
+          {/* Our Mantra Banner (Relate, Restore, Reign) */}
+          <div className="max-w-6xl mx-auto rounded-3xl bg-gradient-to-br from-[#212120] to-[#121211] text-white p-8 sm:p-12 relative overflow-hidden shadow-2xl mb-16">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-60 h-60 bg-secondary/15 rounded-full blur-2xl pointer-events-none" />
+
+            <div className="relative z-10">
+              <div className="text-center max-w-2xl mx-auto mb-10">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-xs font-bold tracking-widest uppercase mb-3">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>The Core Theme</span>
+                </span>
+                <h3 className="text-3xl sm:text-4xl font-display font-bold tracking-tight">
+                  Our Mantra
+                </h3>
+                <p className="text-2xl sm:text-4xl font-display font-extrabold text-secondary mt-2 tracking-wide">
+                  Relate • Restore • Reign
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-primary/20 text-primary-300 font-display font-black text-lg flex items-center justify-center mb-3">
+                    01
+                  </div>
+                  <h4 className="text-xl font-display font-bold text-white mb-2">Relate</h4>
+                  <p className="text-sm text-gray-300 leading-relaxed font-light">
+                    Cultivating an ever-growing, intimate relationship with Christ and authentic, familial fellowship among believers.
+                  </p>
+                </div>
+
+                <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-secondary/20 text-secondary font-display font-black text-lg flex items-center justify-center mb-3">
+                    02
+                  </div>
+                  <h4 className="text-xl font-display font-bold text-white mb-2">Restore</h4>
+                  <p className="text-sm text-gray-300 leading-relaxed font-light">
+                    Experiencing the unconditional love and grace of God that restores wholeness, dignity, and divine identity.
+                  </p>
+                </div>
+
+                <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-300 font-display font-black text-lg flex items-center justify-center mb-3">
+                    03
+                  </div>
+                  <h4 className="text-xl font-display font-bold text-white mb-2">Reign</h4>
+                  <p className="text-sm text-gray-300 leading-relaxed font-light">
+                    Stepping into spiritual maturity, ruling with kingdom authority, and staying relevant and impactful in every pursuit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Mission Card */}
-            <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-lg border border-gray-100 hover:border-primary/20 hover:shadow-2xl transition-all duration-300 space-y-4">
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
-                <Target className="w-7 h-7" />
+          {/* Mission, Vision & Purpose Section Header */}
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-semibold text-xs tracking-widest uppercase mb-3">
+              Foundation &amp; Direction
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-display font-bold text-dark mb-4">
+              Mission, Vision &amp; Purpose
+            </h2>
+            <p className="text-gray-600 text-base sm:text-lg">
+              The spiritual mandate, heartbeat, and compass driving everything we do at Beyond Worship Center.
+            </p>
+          </div>
+
+          {/* 3-Card Grid: Mission, Vision, Purpose */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Mission Statement */}
+            <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-md border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                  <Target className="w-7 h-7" />
+                </div>
+                <span className="text-xs font-bold text-primary tracking-widest uppercase block mb-1">
+                  Our Assignment
+                </span>
+                <h3 className="text-2xl font-display font-bold text-dark mb-4">
+                  Mission Statement
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  To establish a formidable connection of the church, the community and Christ through the teaching of the word, prayer and the empowerment by the Holy Spirit.
+                </p>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-display font-bold text-primary">
-                Our Mission
-              </h3>
-              <p className="text-gray-1 text-base sm:text-lg leading-relaxed">
-                To build a family where grace and faith are preached, and the love of God in Christ is felt — a home for everyone.
-              </p>
             </div>
 
-            {/* Vision Card */}
-            <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-lg border border-gray-100 hover:border-primary/20 hover:shadow-2xl transition-all duration-300 space-y-4">
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
-                <Compass className="w-7 h-7" />
+            {/* Vision Statement */}
+            <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-md border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-secondary/20 text-secondary-dark flex items-center justify-center mb-6">
+                  <Compass className="w-7 h-7 text-dark" />
+                </div>
+                <span className="text-xs font-bold text-dark tracking-widest uppercase block mb-1">
+                  Our Outlook
+                </span>
+                <h3 className="text-2xl font-display font-bold text-dark mb-4">
+                  Vision Statement
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Leading people into a life changing, ever growing relationship with Christ, Bringing sons into maturity through the appropriation of God&apos;s word.
+                </p>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-display font-bold text-primary">
-                Our Vision
-              </h3>
-              <p className="text-gray-1 text-base sm:text-lg leading-relaxed">
-                To preach the gospel of God&apos;s Grace to our generation through the help of the Spirit, empowering believers to relate intimately with God, experience total restoration, and reign in every area of life.
-              </p>
+            </div>
+
+            {/* Our Purpose */}
+            <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-md border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-6">
+                  <BookOpen className="w-7 h-7" />
+                </div>
+                <span className="text-xs font-bold text-emerald-700 tracking-widest uppercase block mb-1">
+                  Our Heartbeat
+                </span>
+                <h3 className="text-2xl font-display font-bold text-dark mb-4">
+                  Our Purpose
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  To lead people to faith in Christ, incorporate them into the fellowship of believers, groom them to become disciples and equip them to stay relevant in their various pursuits.
+                </p>
+              </div>
             </div>
           </div>
         </div>
