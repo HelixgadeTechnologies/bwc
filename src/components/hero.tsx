@@ -116,7 +116,7 @@ export function Hero({ onPlanVisitClick, onWatchOnlineClick }: HeroProps) {
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
-            A family where grace and faith are preached: Relate, Restore, Reign — a home for everyone
+            We are a Christ-centered community with a passion to build and restore relationships, raising believers through the Gospel of Christ.
           </p>
 
           {/* Dual Action CTAs */}
