@@ -248,19 +248,19 @@ export function AboutClient() {
         <div className="container-max relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 text-center">
             <div className="space-y-1">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">5,000+</div>
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">1,000+</div>
               <div className="text-white/85 text-sm sm:text-base font-medium">Active Members</div>
             </div>
             <div className="space-y-1">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">5+</div>
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">4+</div>
               <div className="text-white/85 text-sm sm:text-base font-medium">Years Serving</div>
             </div>
             <div className="space-y-1">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">10+</div>
-              <div className="text-white/85 text-sm sm:text-base font-medium">Branches Worldwide</div>
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">1</div>
+              <div className="text-white/85 text-sm sm:text-base font-medium">Branch</div>
             </div>
             <div className="space-y-1">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">300,000+</div>
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-secondary">2,000+</div>
               <div className="text-white/85 text-sm sm:text-base font-medium">Lives Touched</div>
             </div>
           </div>
