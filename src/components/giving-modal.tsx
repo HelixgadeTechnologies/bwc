@@ -62,7 +62,7 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
           </button>
           <div className="flex items-center gap-2">
             <Heart className="w-5 h-5 fill-current text-secondary" />
-            <span className="text-xs uppercase tracking-widest text-secondary font-bold">Hilarious Generosity</span>
+            <span className="text-xs uppercase tracking-widest text-secondary font-bold">Offerings and Commitments</span>
           </div>
           <h3 className="text-2xl font-display font-bold mt-1 text-white">Give to Beyond Worship Center</h3>
           <p className="text-white/90 text-sm mt-1">
