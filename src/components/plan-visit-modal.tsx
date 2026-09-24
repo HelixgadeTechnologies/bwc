@@ -139,7 +139,7 @@ export function PlanVisitModal({ isOpen, onClose }: PlanVisitModalProps) {
                   >
                     <option>8:00 AM (First Service)</option>
                     <option>10:30 AM (Second Service)</option>
-                    <option>Wednesday 6:00 PM (Midweek Koinonia)</option>
+                    <option>Wednesday 6:00 PM (Midweek Service)</option>
                   </select>
                 </div>
 

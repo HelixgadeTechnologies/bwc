@@ -52,7 +52,7 @@ const BRANCHES: Branch[] = [
     detailedServices: [
       { day: "Sunday", time: "8:00 AM", note: "First Glory Experience" },
       { day: "Sunday", time: "10:30 AM", note: "Second Glory Experience" },
-      { day: "Wednesday", time: "6:00 PM", note: "Midweek Koinonia & Word Study" },
+      { day: "Wednesday", time: "6:00 PM", note: "Midweek Service & Word Study" },
     ],
     phone: "+234 809 668 2229",
     email: "ph@beyondworshipcenter.org",

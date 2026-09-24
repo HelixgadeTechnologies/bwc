@@ -38,14 +38,14 @@ const allEvents = [
   },
   {
     id: "midweek-koinonia",
-    name: "Midweek Koinonia",
+    name: "Midweek Service",
     category: "Midweek Fellowship",
     image: "/images/midweek_koinonia.png",
     date: "Every Wednesday",
     time: "5:00 PM",
     location: "Beyond Worship Center (Port Harcourt)",
     description:
-      "Midweek Koinonia is our family gathering featuring prayers, word, and interactive Questions & Answers.",
+      "Midweek Service is our family gathering featuring prayers, word, and interactive Questions & Answers.",
     href: "#",
     action: "Join Service",
   },
