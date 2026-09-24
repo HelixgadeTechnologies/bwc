@@ -43,10 +43,10 @@ export function Footer() {
               <div className="flex items-center space-x-2.5 text-xs sm:text-sm text-gray-300">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:hello@beyondworshipcenter.org"
+                  href="mailto:hello@bwc.com.ng"
                   className="hover:text-white transition-colors underline decoration-white/20"
                 >
-                  hello@beyondworshipcenter.org
+                  hello@bwc.com.ng
                 </a>
               </div>
             </div>
@@ -251,6 +251,17 @@ export function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-gray-400">
             <p>© {new Date().getFullYear()} Beyond Worship Center. All rights reserved.</p>
+            <p className="flex items-center gap-1.5 text-xs text-gray-400">
+              Built with ❤️ by{" "}
+              <a
+                href="https://helixgade.com.ng/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary hover:text-white font-medium underline underline-offset-4 decoration-secondary/50 hover:decoration-white transition-colors"
+              >
+                Helixgade
+              </a>
+            </p>
             <div className="flex space-x-6">
               <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy

@@ -34,7 +34,7 @@ export default function GistCentresPage() {
             </p>
             <div className="pt-4">
               <a
-                href="mailto:hello@beyondworshipcenter.org?subject=Join%20a%20Gist%20Centre"
+                href="mailto:hello@bwc.com.ng?subject=Join%20a%20Gist%20Centre"
                 className="inline-flex items-center justify-center py-3.5 px-8 rounded-full bg-gradient-primary text-white font-semibold text-sm shadow-md hover:shadow-primary-glow transition-all"
               >
                 Join a Gist Centre

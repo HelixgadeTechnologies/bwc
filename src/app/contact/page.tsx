@@ -221,10 +221,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-dark mb-1">Email</h3>
                     <a
-                      href="mailto:hello@beyondworshipcenter.org"
+                      href="mailto:hello@bwc.com.ng"
                       className="text-gray-600 hover:text-primary transition-colors"
                     >
-                      hello@beyondworshipcenter.org
+                      hello@bwc.com.ng
                     </a>
                   </div>
                 </div>
