@@ -1,69 +1,89 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import React, { useState } from "react";
+import { Hero } from "@/components/hero";
+import { Pillars } from "@/components/pillars";
+import { LogicLoungeBanner } from "@/components/logic-lounge-banner";
+import { UpcomingEvents } from "@/components/upcoming-events";
+import { SermonsCTA } from "@/components/sermons-cta";
+import { BlogSection } from "@/components/blog-section";
+import { DevotionalSection } from "@/components/devotional-section";
+import { RadioSection } from "@/components/radio-section";
+import { GivingSection } from "@/components/giving-section";
+import { CommunityCTA } from "@/components/community-cta";
+import { useShellModal } from "@/components/app-shell";
+import { X } from "lucide-react";
+
+export default function HomePage() {
+  const { openPlanVisit, openGiving } = useShellModal();
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* 1. Hero Section */}
+      <Hero
+        onPlanVisitClick={openPlanVisit}
+        onWatchOnlineClick={() => setVideoModalOpen(true)}
+      />
+
+      {/* 2. Core Pillars ("Welcome Home") */}
+      <Pillars />
+
+      {/* 3. BWC Lounge App Banner */}
+      <LogicLoungeBanner />
+
+      {/* 4. Upcoming Events */}
+      <UpcomingEvents />
+
+      {/* 5. Life-Changing Messages (Sermons CTA) */}
+      <SermonsCTA />
+
+      {/* 6. Latest from Our Blog */}
+      <BlogSection />
+
+      {/* 7. Daily Growth Devotional Plan */}
+      <DevotionalSection />
+
+      {/* 8. BWC Radio 24/7 */}
+      <RadioSection />
+
+      {/* 9. Hilarious Generosity (Giving) */}
+      <GivingSection onOpenGiveModal={openGiving} />
+
+      {/* 10. Community CTA Banner */}
+      <CommunityCTA onPlanVisitClick={openPlanVisit} />
+
+      {/* Online Broadcast Video Modal */}
+      {videoModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+          <div className="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div className="flex items-center justify-between p-4 bg-dark text-white border-b border-white/10">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
+                <span className="text-sm font-semibold tracking-wide">
+                  Beyond Worship Center • Live Service Stream
+                </span>
+              </div>
+              <button
+                onClick={() => setVideoModalOpen(false)}
+                className="text-white/70 hover:text-white p-1 rounded-full hover:bg-white/10 cursor-pointer"
+                aria-label="Close video player"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="relative aspect-video w-full bg-black">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/live_stream?channel=UCv_bT6o-o86M9U4h_4A81Xw"
+                title="Beyond Worship Center Live Stream"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      )}
+    </>
   );
 }
