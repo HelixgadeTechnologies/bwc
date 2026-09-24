@@ -141,7 +141,7 @@ export function Footer() {
             {/* Social Media Links */}
             <div className="flex space-x-2 pt-3">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/beyondworshipcentre"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-white/10 hover:bg-primary transition-colors text-white"
@@ -165,7 +165,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://www.youtube.com"
+                href="https://www.youtube.com/@beyondworshipcentrebwc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-white/10 hover:bg-primary transition-colors text-white"
@@ -208,7 +208,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://web.facebook.com"
+                href="https://www.facebook.com/BeyondWorshipCentre"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-white/10 hover:bg-primary transition-colors text-white"

@@ -41,7 +41,7 @@ export function Pillars() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-dark mb-8 tracking-tight">
-            Welcome to <span className="text-gradient">Beyond Worship Center</span>
+            Welcome to <span className="text-gradient">Life</span>
           </h2>
 
           <p className="text-xl sm:text-2xl text-gray-1 leading-relaxed font-light">
