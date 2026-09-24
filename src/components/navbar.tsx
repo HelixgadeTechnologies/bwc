@@ -24,6 +24,7 @@ const navItems: NavItem[] = [
   { name: "Trainings", href: "/trainings" },
   { name: "Expressions", href: "/expressions" },
   { name: "Sermons", href: "/sermons" },
+  { name: "Testimony", href: "/testimony" },
 ];
 
 export function Navbar({ onOpenGiveModal }: { onOpenGiveModal?: () => void }) {

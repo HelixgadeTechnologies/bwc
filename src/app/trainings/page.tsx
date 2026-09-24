@@ -10,6 +10,9 @@ import {
   CheckCircle,
   ArrowRight,
   Star,
+  Video,
+  Laptop,
+  Globe,
 } from "lucide-react";
 
 const WEEKS = [
@@ -52,12 +55,14 @@ const WEEKS = [
 ];
 
 const BENEFITS = [
-  "Structured 6-week curriculum led by senior leaders",
-  "Clear pathway into your chosen Expression (department)",
+  "Structured 6-week online curriculum led by senior church leadership",
+  "Bi-weekly live virtual classes: Tuesdays & Thursdays (6:30 PM – 8:00 PM)",
+  "100% online format — join from anywhere with interactive participation",
+  "Clear pathway and placement into your chosen Expression (department)",
   "Certificate of completion upon graduation",
-  "One-on-one mentorship sessions",
-  "Commissioning service & formal induction into the workforce",
-  "Access to BWC workforce community and resources",
+  "Digital session materials, class notes, and leadership mentorship",
+  "Formal commissioning and induction into the BWC active workforce",
+  "Access to BWC workforce network, resources, and community",
 ];
 
 export default function TrainingsPage() {
@@ -109,15 +114,15 @@ export default function TrainingsPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full">
               <CalendarDays className="w-4 h-4 text-secondary" />
-              6 Weeks
+              6 Weeks Intensive
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full">
               <Clock className="w-4 h-4 text-secondary" />
-              Every Saturday 9:00 AM
+              Tue & Thurs · 6:30 PM – 8:00 PM
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full">
-              <BookOpen className="w-4 h-4 text-secondary" />
-              In-Person · BWC HQ
+              <Video className="w-4 h-4 text-secondary" />
+              100% Online · Virtual Sessions
             </div>
           </div>
         </div>
@@ -142,11 +147,27 @@ export default function TrainingsPage() {
                 worship, children&apos;s ministry, ushering, media, or any other
                 Expression — this training is your first step.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-gray-600 leading-relaxed mb-6">
                 You&apos;ll be trained by experienced leaders, shaped in character,
                 and formally commissioned into your assigned department at the end
                 of the programme.
               </p>
+
+              {/* Virtual Schedule Notice Callout */}
+              <div className="mb-8 p-5 rounded-2xl bg-amber-50/80 border border-amber-200/90 flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Laptop className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-display font-bold text-dark mb-1">
+                    Virtual Class Schedule & Access
+                  </h4>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    Classes take place every <strong>Tuesday and Thursday from 6:30 PM to 8:00 PM</strong> online.
+                    This training is entirely virtual (not physical), allowing you to attend and participate live from anywhere.
+                  </p>
+                </div>
+              </div>
 
               <ul className="space-y-3">
                 {BENEFITS.map((b) => (
@@ -162,9 +183,9 @@ export default function TrainingsPage() {
             <div className="grid grid-cols-2 gap-6">
               {[
                 { value: "6", label: "Weeks of Training", icon: <CalendarDays className="w-6 h-6" /> },
-                { value: "10+", label: "Expressions to Join", icon: <Star className="w-6 h-6" /> },
-                { value: "100%", label: "Practical & Applicable", icon: <BookOpen className="w-6 h-6" /> },
-                { value: "∞", label: "Kingdom Impact", icon: <Users className="w-6 h-6" /> },
+                { value: "Tue & Thu", label: "6:30 PM – 8:00 PM", icon: <Clock className="w-6 h-6" /> },
+                { value: "100%", label: "Online & Interactive", icon: <Video className="w-6 h-6" /> },
+                { value: "10+", label: "Expressions to Join", icon: <Users className="w-6 h-6" /> },
               ].map((s) => (
                 <div
                   key={s.label}
@@ -173,8 +194,8 @@ export default function TrainingsPage() {
                   <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mx-auto mb-3">
                     {s.icon}
                   </div>
-                  <div className="text-3xl font-display font-bold text-dark mb-1">{s.value}</div>
-                  <div className="text-sm text-gray-500">{s.label}</div>
+                  <div className="text-2xl sm:text-3xl font-display font-bold text-dark mb-1">{s.value}</div>
+                  <div className="text-xs sm:text-sm text-gray-500">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -234,8 +255,8 @@ export default function TrainingsPage() {
                 Sign Up for the Next Cohort
               </h2>
               <p className="text-gray-600">
-                Fill in the form below and our team will reach out with details
-                for the upcoming training cohort.
+                Fill in the form below to register for the upcoming cohort. Classes hold
+                every <strong>Tuesday & Thursday from 6:30 PM to 8:00 PM online</strong> (virtual via video link).
               </p>
             </div>
 
@@ -249,7 +270,8 @@ export default function TrainingsPage() {
                 </h3>
                 <p className="text-gray-600 max-w-sm mx-auto text-sm">
                   Thank you for signing up for the BWC Intending Workers Training.
-                  Our team will contact you shortly with next steps.
+                  Classes hold Tuesdays & Thursdays (6:30 PM - 8:00 PM online).
+                  Our team will contact you shortly with your virtual meeting link.
                 </p>
                 <button
                   onClick={() => {

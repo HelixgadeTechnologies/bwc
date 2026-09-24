@@ -83,6 +83,11 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/testimony" className="text-secondary hover:text-white transition-colors font-medium">
+                  Share Testimony
+                </Link>
+              </li>
             </ul>
           </div>
 
