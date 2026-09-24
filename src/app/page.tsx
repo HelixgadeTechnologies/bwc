@@ -4,10 +4,9 @@ import React, { useState } from "react";
 import { Hero } from "@/components/hero";
 import { Pillars } from "@/components/pillars";
 import { LogicLoungeBanner } from "@/components/logic-lounge-banner";
-import { UpcomingEvents } from "@/components/upcoming-events";
+
 import { SermonsCTA } from "@/components/sermons-cta";
-import { BlogSection } from "@/components/blog-section";
-import { DevotionalSection } from "@/components/devotional-section";
+
 import { RadioSection } from "@/components/radio-section";
 import { GivingSection } from "@/components/giving-section";
 import { CommunityCTA } from "@/components/community-cta";
@@ -32,17 +31,10 @@ export default function HomePage() {
       {/* 3. BWC Lounge App Banner */}
       <LogicLoungeBanner />
 
-      {/* 4. Upcoming Events */}
-      <UpcomingEvents />
 
       {/* 5. Life-Changing Messages (Sermons CTA) */}
       <SermonsCTA />
 
-      {/* 6. Latest from Our Blog */}
-      <BlogSection />
-
-      {/* 7. Daily Growth Devotional Plan */}
-      <DevotionalSection />
 
       {/* 8. BWC Radio 24/7 */}
       <RadioSection />

@@ -21,7 +21,6 @@ interface NavItem {
 const navItems: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Events", href: "/events" },
   {
     name: "Trainings",
     href: "/trainings",
@@ -33,8 +32,6 @@ const navItems: NavItem[] = [
   },
   { name: "Expressions", href: "/expressions" },
   { name: "Sermons", href: "/sermons" },
-  { name: "BWC Lounge", href: "/bwc-lounge" },
-  { name: "Blog", href: "/blog" },
 ];
 
 export function Navbar({ onOpenGiveModal }: { onOpenGiveModal?: () => void }) {

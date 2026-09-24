@@ -28,7 +28,7 @@ export function AboutClient() {
         {/* Background Image & Multi-layer Gradients */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/about.png"
+            src="/images/about.jpg"
             alt="Aerial view and gathering of Beyond Worship Center in Port Harcourt, Nigeria"
             fill
             priority
@@ -168,8 +168,8 @@ export function AboutClient() {
             <div className="relative">
               <div className="relative h-[420px] sm:h-[520px] rounded-3xl overflow-hidden shadow-2xl bg-dark/10 group">
                 <Image
-                  src="/images/welcome-cover-2.png"
-                  alt="Beyond Worship Center community gathering for worship and fellowship"
+                  src="/images/ourstory.jpg"
+                  alt="Beyond Worship Center — Our Story"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -289,11 +289,11 @@ export function AboutClient() {
               <div className="relative">
                 <div className="relative h-[420px] sm:h-[500px] lg:h-[540px] rounded-3xl overflow-hidden shadow-elegant bg-[#f3f1f0] flex items-center justify-center">
                   <Image
-                    src="/images/pflo.png"
+                    src="/images/godfrey.png"
                     alt="Pastor Udochukwu Nwanma, Lead Pastor of Beyond Worship Center"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-contain"
+                    className="object-cover"
                   />
                 </div>
                 {/* Brand Badge */}
@@ -369,11 +369,11 @@ export function AboutClient() {
               <div className="relative lg:col-start-2">
                 <div className="relative h-[420px] sm:h-[500px] lg:h-[540px] rounded-3xl overflow-hidden shadow-elegant bg-[#f3f1f0] flex items-center justify-center">
                   <Image
-                    src="/images/PMaks-3.jpg"
+                    src="/images/pastor.jpg"
                     alt="Pastor Chika UD Nwanma, Lead Pastor at Beyond Worship Center"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-contain"
+                    className="object-cover"
                   />
                 </div>
                 {/* Brand Badge */}
