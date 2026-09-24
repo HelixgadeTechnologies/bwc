@@ -10,7 +10,7 @@ interface GivingModalProps {
 }
 
 export function GivingModal({ isOpen, onClose }: GivingModalProps) {
-  const [activeTab, setActiveTab] = useState<"card" | "transfer" | "intl">("card");
+  const [activeTab, setActiveTab] = useState<"card" | "transfer" | "intl">("transfer");
   const [currency, setCurrency] = useState("NGN");
   const [givingType, setGivingType] = useState("Offering");
   const [amount, setAmount] = useState("10000");
@@ -73,17 +73,6 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
         {/* Tab Selection */}
         <div className="flex border-b border-gray-100 text-xs sm:text-sm font-semibold text-gray-600 bg-gray-50/60">
           <button
-            onClick={() => setActiveTab("card")}
-            className={`flex-1 py-3 px-2 flex items-center justify-center gap-1.5 border-b-2 transition-all cursor-pointer ${
-              activeTab === "card"
-                ? "border-primary text-primary bg-white"
-                : "border-transparent hover:text-dark"
-            }`}
-          >
-            <CreditCard className="w-4 h-4" />
-            <span>Card / Online</span>
-          </button>
-          <button
             onClick={() => setActiveTab("transfer")}
             className={`flex-1 py-3 px-2 flex items-center justify-center gap-1.5 border-b-2 transition-all cursor-pointer ${
               activeTab === "transfer"
@@ -95,6 +84,17 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
             <span>Bank Transfer</span>
           </button>
           <button
+            onClick={() => setActiveTab("card")}
+            className={`flex-1 py-3 px-2 flex items-center justify-center gap-1.5 border-b-2 transition-all cursor-pointer ${
+              activeTab === "card"
+                ? "border-primary text-primary bg-white"
+                : "border-transparent hover:text-dark"
+            }`}
+          >
+            <CreditCard className="w-4 h-4" />
+            <span>Card / Online</span>
+          </button>
+          <button
             onClick={() => setActiveTab("intl")}
             className={`flex-1 py-3 px-2 flex items-center justify-center gap-1.5 border-b-2 transition-all cursor-pointer ${
               activeTab === "intl"
@@ -104,6 +104,9 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
           >
             <Globe className="w-4 h-4" />
             <span>Global / Wire</span>
+            <span className="text-[10px] bg-amber-100 text-amber-800 font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider">
+              Coming Soon
+            </span>
           </button>
         </div>
 
@@ -128,7 +131,86 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
             </div>
           ) : (
             <>
-              {/* TAB 1: CARD / ONLINE */}
+              {/* TAB 1: BANK TRANSFER (NIGERIA) */}
+              {activeTab === "transfer" && (
+                <div className="space-y-4 text-sm">
+                  <p className="text-gray-600 text-xs leading-relaxed">
+                    Make a direct bank deposit or electronic funds transfer to Beyond Worship Center church accounts:
+                  </p>
+
+                  {/* Account 1: Zenith Bank */}
+                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span className="font-bold text-dark text-sm">Zenith Bank</span>
+                      <span className="text-xs bg-primary/10 text-primary font-semibold px-2 py-0.5 rounded">
+                        Tithe / Offering
+                      </span>
+                    </div>
+                    <div className="text-xs text-gray-600">Account Name: Beyond Worship Centre</div>
+                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-base font-bold text-dark">
+                      <span>1219464157</span>
+                      <button
+                        type="button"
+                        onClick={() => handleCopy("1219464157", "zenith-tithe")}
+                        className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
+                      >
+                        {copiedKey === "zenith-tithe" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                        <span>{copiedKey === "zenith-tithe" ? "Copied" : "Copy"}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Account 2: Premium Trust */}
+                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span className="font-bold text-dark text-sm">Premium Trust</span>
+                      <span className="text-xs bg-emerald-100 text-emerald-700 font-semibold px-2 py-0.5 rounded">
+                        Project Account
+                      </span>
+                    </div>
+                    <div className="text-xs text-gray-600">Account Name: BWC project</div>
+                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-base font-bold text-dark">
+                      <span>0040085128</span>
+                      <button
+                        type="button"
+                        onClick={() => handleCopy("0040085128", "premium-project")}
+                        className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
+                      >
+                        {copiedKey === "premium-project" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                        <span>{copiedKey === "premium-project" ? "Copied" : "Copy"}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Account 3: Globus Bank */}
+                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span className="font-bold text-dark text-sm">Globus Bank</span>
+                      <span className="text-xs bg-amber-100 text-amber-800 font-semibold px-2 py-0.5 rounded">
+                        Welfare Account
+                      </span>
+                    </div>
+                    <div className="text-xs text-gray-600">Account Name: Beyond Worship Centre</div>
+                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-base font-bold text-dark">
+                      <span>1000441923</span>
+                      <button
+                        type="button"
+                        onClick={() => handleCopy("1000441923", "globes-welfare")}
+                        className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
+                      >
+                        {copiedKey === "globes-welfare" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                        <span>{copiedKey === "globes-welfare" ? "Copied" : "Copy"}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <p className="text-[11px] text-gray-500 italic text-center pt-2">
+                    Please use your name and giving type (e.g. &ldquo;John Doe - Tithe&rdquo;) as the payment narrative.
+                  </p>
+                </div>
+              )}
+
+              {/* TAB 2: CARD / ONLINE */}
               {activeTab === "card" && (
                 <form onSubmit={handlePay} className="space-y-4 text-sm">
                   <div className="grid grid-cols-2 gap-3">
@@ -236,110 +318,30 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
                 </form>
               )}
 
-              {/* TAB 2: BANK TRANSFER (NIGERIA) */}
-              {activeTab === "transfer" && (
-                <div className="space-y-4 text-sm">
-                  <p className="text-gray-600 text-xs leading-relaxed">
-                    Make a direct bank deposit or electronic funds transfer to Beyond Worship Center church accounts:
-                  </p>
-
-                  {/* GTBank Account Card */}
-                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-dark text-sm">Guaranty Trust Bank (GTBank)</span>
-                      <span className="text-xs bg-primary/10 text-primary font-semibold px-2 py-0.5 rounded">
-                        Tithe &amp; Offering
-                      </span>
-                    </div>
-                    <div className="text-xs text-gray-600">Account Name: Beyond Worship Center</div>
-                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-base font-bold text-dark">
-                      <span>0451234567</span>
-                      <button
-                        type="button"
-                        onClick={() => handleCopy("0451234567", "gtb")}
-                        className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
-                      >
-                        {copiedKey === "gtb" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        <span>{copiedKey === "gtb" ? "Copied" : "Copy"}</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Zenith Bank Account Card */}
-                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-dark text-sm">Zenith Bank Plc</span>
-                      <span className="text-xs bg-emerald-100 text-emerald-700 font-semibold px-2 py-0.5 rounded">
-                        Building &amp; Project
-                      </span>
-                    </div>
-                    <div className="text-xs text-gray-600">Account Name: Beyond Worship Center Project</div>
-                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-base font-bold text-dark">
-                      <span>1019876543</span>
-                      <button
-                        type="button"
-                        onClick={() => handleCopy("1019876543", "zenith")}
-                        className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
-                      >
-                        {copiedKey === "zenith" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        <span>{copiedKey === "zenith" ? "Copied" : "Copy"}</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <p className="text-[11px] text-gray-500 italic text-center pt-2">
-                    Please use your name and giving type (e.g. &ldquo;John Doe - Tithe&rdquo;) as the payment narrative.
-                  </p>
-                </div>
-              )}
-
               {/* TAB 3: INTERNATIONAL WIRE */}
               {activeTab === "intl" && (
-                <div className="space-y-4 text-sm">
-                  <p className="text-gray-600 text-xs leading-relaxed">
-                    For members and partners outside Nigeria, you can give via our international domiciliary accounts:
-                  </p>
-
-                  {/* USD Account */}
-                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-1.5 text-xs">
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-dark text-sm">United States Dollar (USD)</span>
-                      <span className="bg-primary/10 text-primary font-bold px-2 py-0.5 rounded">USD</span>
-                    </div>
-                    <p className="text-gray-600">Bank: Guaranty Trust Bank Nigeria</p>
-                    <p className="text-gray-600">Account Name: Beyond Worship Center USD</p>
-                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-sm font-bold text-dark">
-                      <span>0451234588</span>
-                      <button
-                        type="button"
-                        onClick={() => handleCopy("0451234588", "usd")}
-                        className="text-xs text-primary font-sans flex items-center gap-1 cursor-pointer"
-                      >
-                        {copiedKey === "usd" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        <span>{copiedKey === "usd" ? "Copied" : "Copy"}</span>
-                      </button>
-                    </div>
+                <div className="py-12 px-4 text-center space-y-4">
+                  <div className="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto">
+                    <Globe className="w-8 h-8" />
                   </div>
-
-                  {/* GBP Account */}
-                  <div className="p-4 rounded-2xl bg-gray-50 border border-gray-200 space-y-1.5 text-xs">
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-dark text-sm">British Pounds (GBP)</span>
-                      <span className="bg-primary/10 text-primary font-bold px-2 py-0.5 rounded">GBP</span>
-                    </div>
-                    <p className="text-gray-600">Bank: Guaranty Trust Bank Nigeria</p>
-                    <p className="text-gray-600">Account Name: Beyond Worship Center GBP</p>
-                    <div className="flex items-center justify-between bg-white px-3 py-2 rounded-xl border border-gray-200 font-mono text-sm font-bold text-dark">
-                      <span>0451234599</span>
-                      <button
-                        type="button"
-                        onClick={() => handleCopy("0451234599", "gbp")}
-                        className="text-xs text-primary font-sans flex items-center gap-1 cursor-pointer"
-                      >
-                        {copiedKey === "gbp" ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        <span>{copiedKey === "gbp" ? "Copied" : "Copy"}</span>
-                      </button>
-                    </div>
+                  <div className="inline-block px-3 py-1 rounded-full bg-secondary/30 text-dark font-bold text-xs uppercase tracking-wider">
+                    Coming Soon
+                  </div>
+                  <h4 className="text-xl font-bold font-display text-dark">
+                    Global / Wire Transfers
+                  </h4>
+                  <p className="text-gray-600 text-sm max-w-sm mx-auto leading-relaxed">
+                    Our international domiciliary and global wire transfer channels are coming soon.
+                    In the meantime, kindly give using the <strong>Card / Online</strong> option or local bank transfer.
+                  </p>
+                  <div className="pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setActiveTab("card")}
+                      className="px-6 py-2.5 rounded-full bg-gradient-primary text-white text-xs font-semibold hover:shadow-primary-glow transition-all cursor-pointer"
+                    >
+                      Give with Card / Online
+                    </button>
                   </div>
                 </div>
               )}

@@ -52,93 +52,90 @@ export default function GivePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Account 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Account 1: Zenith Bank */}
             <div className="p-6 rounded-3xl bg-gray-50 border border-gray-200 shadow-sm space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-bold text-lg text-dark">Guaranty Trust Bank (GTBank)</h3>
-                  <p className="text-xs text-gray-500 font-medium">Tithe &amp; General Offering</p>
+                  <h3 className="font-bold text-lg text-dark">Zenith Bank</h3>
+                  <p className="text-xs text-gray-500 font-medium">Tithe / Offering</p>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold">NGN (₦)</span>
               </div>
-              <div className="text-xs text-gray-600">Account Name: Beyond Worship Center</div>
+              <div className="text-xs text-gray-600">Account Name: Beyond Worship Centre</div>
               <div className="flex items-center justify-between bg-white px-4 py-3 rounded-2xl border border-gray-200 font-mono text-lg font-bold text-dark">
-                <span>0451234567</span>
+                <span>1219464157</span>
                 <button
-                  onClick={() => handleCopy("0451234567", "gtb")}
+                  onClick={() => handleCopy("1219464157", "zenith-tithe")}
                   className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
                 >
-                  {copiedKey === "gtb" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
-                  <span>{copiedKey === "gtb" ? "Copied" : "Copy"}</span>
+                  {copiedKey === "zenith-tithe" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                  <span>{copiedKey === "zenith-tithe" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
             </div>
 
-            {/* Account 2 */}
+            {/* Account 2: Premium Trust */}
             <div className="p-6 rounded-3xl bg-gray-50 border border-gray-200 shadow-sm space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-bold text-lg text-dark">Zenith Bank Plc</h3>
-                  <p className="text-xs text-gray-500 font-medium">Building &amp; Project Fund</p>
+                  <h3 className="font-bold text-lg text-dark">Premium Trust</h3>
+                  <p className="text-xs text-gray-500 font-medium">Project Account</p>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold">NGN (₦)</span>
               </div>
-              <div className="text-xs text-gray-600">Account Name: Beyond Worship Center Project</div>
+              <div className="text-xs text-gray-600">Account Name: BWC project</div>
               <div className="flex items-center justify-between bg-white px-4 py-3 rounded-2xl border border-gray-200 font-mono text-lg font-bold text-dark">
-                <span>1019876543</span>
+                <span>0040085128</span>
                 <button
-                  onClick={() => handleCopy("1019876543", "zenith")}
+                  onClick={() => handleCopy("0040085128", "premium-project")}
                   className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
                 >
-                  {copiedKey === "zenith" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
-                  <span>{copiedKey === "zenith" ? "Copied" : "Copy"}</span>
+                  {copiedKey === "premium-project" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                  <span>{copiedKey === "premium-project" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
             </div>
 
-            {/* USD Domiciliary */}
+            {/* Account 3: Globus Bank */}
             <div className="p-6 rounded-3xl bg-gray-50 border border-gray-200 shadow-sm space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-bold text-lg text-dark">GTBank USD Domiciliary</h3>
-                  <p className="text-xs text-gray-500 font-medium">International Currency</p>
+                  <h3 className="font-bold text-lg text-dark">Globus Bank</h3>
+                  <p className="text-xs text-gray-500 font-medium">Welfare Account</p>
                 </div>
-                <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold">USD ($)</span>
+                <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold">NGN (₦)</span>
               </div>
-              <div className="text-xs text-gray-600">Account Name: Beyond Worship Center USD</div>
+              <div className="text-xs text-gray-600">Account Name: Beyond Worship Centre</div>
               <div className="flex items-center justify-between bg-white px-4 py-3 rounded-2xl border border-gray-200 font-mono text-lg font-bold text-dark">
-                <span>0451234588</span>
+                <span>1000441923</span>
                 <button
-                  onClick={() => handleCopy("0451234588", "usd")}
+                  onClick={() => handleCopy("1000441923", "globes-welfare")}
                   className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
                 >
-                  {copiedKey === "usd" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
-                  <span>{copiedKey === "usd" ? "Copied" : "Copy"}</span>
+                  {copiedKey === "globes-welfare" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                  <span>{copiedKey === "globes-welfare" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
             </div>
+          </div>
 
-            {/* GBP Domiciliary */}
-            <div className="p-6 rounded-3xl bg-gray-50 border border-gray-200 shadow-sm space-y-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold text-lg text-dark">GTBank GBP Domiciliary</h3>
-                  <p className="text-xs text-gray-500 font-medium">International Currency</p>
-                </div>
-                <span className="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold">GBP (£)</span>
-              </div>
-              <div className="text-xs text-gray-600">Account Name: Beyond Worship Center GBP</div>
-              <div className="flex items-center justify-between bg-white px-4 py-3 rounded-2xl border border-gray-200 font-mono text-lg font-bold text-dark">
-                <span>0451234599</span>
-                <button
-                  onClick={() => handleCopy("0451234599", "gbp")}
-                  className="text-xs text-primary font-sans flex items-center gap-1 hover:underline cursor-pointer"
-                >
-                  {copiedKey === "gbp" ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
-                  <span>{copiedKey === "gbp" ? "Copied" : "Copy"}</span>
-                </button>
-              </div>
+          {/* Global / Wire Notice */}
+          <div className="mt-12 p-8 rounded-3xl bg-gray-50 border border-dashed border-gray-300 text-center max-w-2xl mx-auto space-y-3">
+            <span className="inline-block px-3 py-1 rounded-full bg-secondary/30 text-dark font-bold text-xs uppercase tracking-wider">
+              Coming Soon
+            </span>
+            <h3 className="font-display font-bold text-xl text-dark">International Wire &amp; Domiciliary Accounts</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Global and international wire transfer channels are coming soon. In the meantime, international partners and members can give via our online card giving portal.
+            </p>
+            <div className="pt-2">
+              <button
+                onClick={openGiving}
+                className="px-6 py-2.5 rounded-full bg-gradient-primary text-white text-xs font-semibold hover:shadow-primary-glow transition-all cursor-pointer"
+              >
+                Give Online via Card
+              </button>
             </div>
           </div>
         </div>
