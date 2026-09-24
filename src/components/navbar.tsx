@@ -21,15 +21,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  {
-    name: "Trainings",
-    href: "/trainings",
-    submenu: [
-      { name: "BWC Foundation Class", href: "/trainings/lfc" },
-      { name: "BWC Discipleship Class", href: "/trainings/ldc" },
-      { name: "BWC Minister's Training", href: "/trainings/lmt" },
-    ],
-  },
+  { name: "Trainings", href: "/trainings" },
   { name: "Expressions", href: "/expressions" },
   { name: "Sermons", href: "/sermons" },
 ];
