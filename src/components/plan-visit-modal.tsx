@@ -168,7 +168,7 @@ export function PlanVisitModal({ isOpen, onClose }: PlanVisitModalProps) {
                   className="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer"
                 />
                 <label htmlFor="hasKids" className="text-xs text-gray-600 cursor-pointer">
-                  I will be bringing children (BWC Kids Church available)
+                  I will be bringing children (Heirs Expression)
                 </label>
               </div>
 
