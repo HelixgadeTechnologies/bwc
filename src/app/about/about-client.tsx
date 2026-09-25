@@ -466,7 +466,7 @@ export function AboutClient() {
                 <div className="relative h-[540px] sm:h-[660px] lg:h-[750px] rounded-3xl overflow-hidden shadow-elegant bg-[#212120]/5 flex items-center justify-center">
                   <Image
                     src="/images/chika.jpg"
-                    alt="Pastor Chika UD Nwanma, Lead Pastor at Beyond Worship Center"
+                    alt="Pastor Chika UD Nwanma, Co Lead Pastor at Beyond Worship Center"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-top"
@@ -485,13 +485,13 @@ export function AboutClient() {
                     Pastor Chika UD Nwanma
                   </h3>
                   <p className="text-lg sm:text-xl text-primary font-display font-semibold">
-                    Lead Pastor, Beyond Worship Center
+                    Co Lead Pastor, Beyond Worship Center
                   </p>
                 </div>
 
                 <div className="space-y-4 text-base sm:text-lg text-gray-1 leading-relaxed">
                   <p>
-                    <strong>Pastor Chika UD Nwanma</strong> serves as Lead Pastor at Beyond Worship Center alongside her husband,
+                    <strong>Pastor Chika UD Nwanma</strong> serves as Co Lead Pastor at Beyond Worship Center alongside her husband,
                     Pastor Udochukwu Nwanma. A woman of prayer, profound grace, and spiritual discernment, she ministers with
                     warmth, wisdom, and an unwavering commitment to the spiritual and emotional wholeness of the flock.
                   </p>
