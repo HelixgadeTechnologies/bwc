@@ -18,39 +18,39 @@ import {
 const WEEKS = [
   {
     week: "Week 1",
-    title: "Foundation of Service",
+    title: "BWC Identity",
     description:
-      "Understanding God's call to service, the heart of a servant-leader, and BWC's vision, mission, and core values.",
+      "Understanding the vision, mission, kingdom mandate, and core identity that define Beyond Worship Center as a Christ-centred community.",
   },
   {
     week: "Week 2",
-    title: "The Church & Its Structure",
+    title: "The Heart and Principles for Ministry Excellence",
     description:
-      "How BWC is organised, the role of each department (Expression), and how they work together as the Body of Christ.",
+      "Cultivating the heart of a servant-leader, divine stewardship, and mastering practical principles for excellence in ministry.",
   },
   {
     week: "Week 3",
-    title: "Character & Conduct",
+    title: "Church Growth Strategies",
     description:
-      "Kingdom character, integrity in ministry, dress code, punctuality, and interpersonal excellence on the team.",
+      "Kingdom-driven approaches to relational evangelism, effective discipleship, community impact, and sustainable church expansion.",
   },
   {
     week: "Week 4",
-    title: "Spiritual Disciplines",
+    title: "Worker Ethics and Code of Conduct",
     description:
-      "Personal devotion, prayer life, Word study, and how to maintain spiritual vitality while serving actively.",
+      "Kingdom character, integrity in service, punctuality, ministry etiquette, confidentiality, and honouring leadership in all pursuits.",
   },
   {
     week: "Week 5",
-    title: "Teamwork & Communication",
+    title: "Doctrines and Spiritual Foundation (Part 1)",
     description:
-      "Effective collaboration within your Expression, conflict resolution, honouring leadership, and serving with excellence.",
+      "Foundational Christian doctrines, the revelation of God's unconditional grace, our righteousness in Christ, and New Covenant truths.",
   },
   {
     week: "Week 6",
-    title: "Deployment & Commissioning",
+    title: "Doctrines and Spiritual Foundation (Part 2)",
     description:
-      "Final assessment, Expressions placement, and the commissioning ceremony welcoming you into the BWC workforce.",
+      "Deepening spiritual vitality through the Word, prayer, the empowering presence of the Holy Spirit, and walking in spiritual authority.",
   },
 ];
 

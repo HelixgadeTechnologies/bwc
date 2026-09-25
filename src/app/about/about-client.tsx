@@ -381,14 +381,15 @@ export function AboutClient() {
             {/* Leader 1: Pastor Udochukwu Nwanma */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Photo */}
-              <div className="relative">
-                <div className="relative h-[420px] sm:h-[500px] lg:h-[540px] rounded-3xl overflow-hidden shadow-elegant bg-[#f3f1f0] flex items-center justify-center">
+              <div className="relative w-full max-w-[540px] mx-auto">
+                <div className="relative h-[540px] sm:h-[660px] lg:h-[750px] rounded-3xl overflow-hidden shadow-elegant bg-[#212120]/5 flex items-center justify-center">
                   <Image
-                    src="/images/godfrey.png"
+                    src="/images/pastUD.jpg"
                     alt="Pastor Udochukwu Nwanma, Lead Pastor of Beyond Worship Center"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
+                    className="object-cover object-top"
+                    priority
                   />
                 </div>
                 {/* Brand Badge */}
@@ -461,14 +462,14 @@ export function AboutClient() {
             {/* Leader 2: Pastor Chika UD Nwanma (Alternating) */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center lg:grid-flow-col-dense">
               {/* Photo on Right */}
-              <div className="relative lg:col-start-2">
-                <div className="relative h-[420px] sm:h-[500px] lg:h-[540px] rounded-3xl overflow-hidden shadow-elegant bg-[#f3f1f0] flex items-center justify-center">
+              <div className="relative lg:col-start-2 w-full max-w-[540px] mx-auto">
+                <div className="relative h-[540px] sm:h-[660px] lg:h-[750px] rounded-3xl overflow-hidden shadow-elegant bg-[#212120]/5 flex items-center justify-center">
                   <Image
-                    src="/images/pastor.jpg"
+                    src="/images/chika.jpg"
                     alt="Pastor Chika UD Nwanma, Lead Pastor at Beyond Worship Center"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 {/* Brand Badge */}
