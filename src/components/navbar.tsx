@@ -53,6 +53,18 @@ export function Navbar({ onOpenGiveModal }: { onOpenGiveModal?: () => void }) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  // Lock body scroll when mobile menu is open to keep overlay firmly above all page sections
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   const toggleMobileAccordion = (name: string) => {
     setMobileExpanded((prev) => ({
       ...prev,
@@ -62,9 +74,9 @@ export function Navbar({ onOpenGiveModal }: { onOpenGiveModal?: () => void }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        isScrolled
-          ? "bg-[#212120]/95 backdrop-blur-md shadow-xl py-3 border-b border-white/10"
+      className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-300 ease-in-out ${
+        isScrolled || mobileMenuOpen
+          ? "bg-[#212120] shadow-2xl py-3 border-b border-white/10"
           : "bg-transparent py-4"
       }`}
     >
@@ -191,7 +203,7 @@ export function Navbar({ onOpenGiveModal }: { onOpenGiveModal?: () => void }) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[70px] bg-[#212120]/98 backdrop-blur-2xl z-40 lg:hidden overflow-y-auto border-t border-white/10 px-6 py-8 flex flex-col justify-between">
+        <div className="fixed inset-0 top-[60px] sm:top-[68px] bg-[#212120] backdrop-blur-3xl z-[999] lg:hidden overflow-y-auto border-t border-white/10 px-6 py-8 flex flex-col justify-between shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="space-y-3">
             {navItems.map((item) => {
               const hasSubmenu = Boolean(item.submenu);
