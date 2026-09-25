@@ -67,11 +67,8 @@ export default function TestimonyPage() {
           </h1>
 
           {/* Sub message */}
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 font-medium leading-relaxed max-w-3xl mx-auto mb-3 animate-in fade-in duration-700 uppercase tracking-wide">
+          <p className="text-base sm:text-lg lg:text-xl text-white/90 font-medium leading-relaxed max-w-3xl mx-auto mb-10 animate-in fade-in duration-700 uppercase tracking-wide">
             MAKE IT A HABIT TO ALWAYS SHARE WHAT GOD HAS DONE FOR YOU IN THE COURSE OF THE WEEK.
-          </p>
-          <p className="text-sm sm:text-base lg:text-lg text-secondary font-semibold max-w-2xl mx-auto mb-10 animate-in fade-in duration-700 uppercase tracking-wider">
-            USE THIS LINK TO HAVE THE OPPORTUNITY TO SHARE YOUR TESTIMONY TOMORROW.
           </p>
 
           {/* CTA Button */}
