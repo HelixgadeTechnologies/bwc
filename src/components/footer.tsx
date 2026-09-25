@@ -64,8 +64,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/events" className="text-gray-300 hover:text-white transition-colors">
-                  Events
+                <Link href="/sermons" className="text-gray-300 hover:text-white transition-colors">
+                  Sermons
                 </Link>
               </li>
               <li>
