@@ -24,7 +24,7 @@ export default function GivePage() {
             <span>Partnership &amp; Giving</span>
           </span>
           <h1 className="text-4xl sm:text-6xl font-display font-bold tracking-tight mb-6">
-            Hilarious Generosity
+            Offerings and Commitments
           </h1>
           <p className="text-xl text-gray-300 font-light leading-relaxed max-w-2xl mx-auto mb-8">
             Your giving empowers the expansion of God&apos;s kingdom and takes the revelation of His unconditional

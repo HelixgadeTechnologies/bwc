@@ -39,7 +39,7 @@ export default function HomePage() {
       {/* 8. BWC Radio 24/7 */}
       <RadioSection />
 
-      {/* 9. Hilarious Generosity (Giving) */}
+      {/* 9. Offerings and Commitments (Giving) */}
       <GivingSection onOpenGiveModal={openGiving} />
 
       {/* 10. Community CTA Banner */}
