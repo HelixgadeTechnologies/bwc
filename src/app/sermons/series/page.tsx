@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { SermonsClient } from "../sermons-client";
 
 export const metadata: Metadata = {
-  title: "Sermon Series | Beyond Worship Center",
-  description: "Browse all teaching series and expository studies from Beyond Worship Center.",
+  title: "Sermon Series | Beyond Worship Centre",
+  description: "Browse all teaching series and expository studies from Beyond Worship Centre.",
 };
 
 export default function SeriesIndexPage() {

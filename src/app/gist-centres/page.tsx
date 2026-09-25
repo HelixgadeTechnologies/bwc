@@ -2,7 +2,7 @@ import React from "react";
 import { Users, Heart, MapPin, Sparkles } from "lucide-react";
 
 export const metadata = {
-  title: "Gist Centres | Beyond Worship Center",
+  title: "Gist Centres | Beyond Worship Centre",
   description: "Connect with our house fellowships and small groups known as Gist Centres.",
 };
 

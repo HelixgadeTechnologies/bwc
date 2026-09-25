@@ -139,7 +139,7 @@ export function AudioPlayerProvider({ children }: { children: React.ReactNode })
     }
   };
 
-  const playTrack = (title: string, subtitle = "Beyond Worship Center", url?: string) => {
+  const playTrack = (title: string, subtitle = "Beyond Worship Centre", url?: string) => {
     setTrackTitle(title);
     setTrackSubtitle(subtitle);
     setIsVisible(true);

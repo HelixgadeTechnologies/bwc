@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Calendar, User, ArrowRight, BookOpen } from "lucide-react";
 
 export const metadata = {
-  title: "Blog | Beyond Worship Center",
+  title: "Blog | Beyond Worship Centre",
   description:
-    "Jesus Revealed. Grace Explained. Faith Strengthened. Read inspiring articles from Pastor Udochukwu Nwanma and the Beyond Worship Center pastoral team.",
+    "Jesus Revealed. Grace Explained. Faith Strengthened. Read inspiring articles from Pastor Udochukwu Nwanma and the Beyond Worship Centre pastoral team.",
 };
 
 const blogPosts = [

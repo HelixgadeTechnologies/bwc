@@ -8,12 +8,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   if (slug === "relate-restore-reign" || slug === "love-life-impact") {
     return {
-      title: "RELATE. RESTORE. REIGN. | Beyond Worship Center Blog",
+      title: "RELATE. RESTORE. REIGN. | Beyond Worship Centre Blog",
       description: "How God's Grace Empowers Us to Relate in Love, Walk in Restoration, and Reign in Kingdom Dominion by Pastor Udochukwu Nwanma.",
     };
   }
   return {
-    title: "Article | Beyond Worship Center Blog",
+    title: "Article | Beyond Worship Centre Blog",
   };
 }
 
@@ -213,10 +213,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div>
             <h3 className="font-bold text-dark text-lg font-display">Pastor Udochukwu Nwanma</h3>
             <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-2">
-              Lead Pastor, Beyond Worship Center
+              Lead Pastor, Beyond Worship Centre
             </p>
             <p className="text-gray-600 text-xs leading-relaxed">
-              Pastor Udochukwu Nwanma is the Lead Pastor of Beyond Worship Center, dedicated to unveiling Jesus and teaching the uncompromised
+              Pastor Udochukwu Nwanma is the Lead Pastor of Beyond Worship Centre, dedicated to unveiling Jesus and teaching the uncompromised
               word of God with tangible signs, wonders, and life transformations.
             </p>
           </div>

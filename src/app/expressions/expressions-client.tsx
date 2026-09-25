@@ -48,7 +48,7 @@ const EXPRESSIONS: DepartmentExpression[] = [
     tagline: "Honour, Dignity, and Pastoral Care",
     image: "/images/expression/Livingstones.jpg",
     description:
-      "Living Stones is the church protocol and pastoral care department of Beyond Worship Center. Dedicated to caring for our Lead Pastors, receiving visiting ministers with utmost dignity, and providing executive ministerial support to ensure sacred order and honor in God's house.",
+      "Living Stones is the church protocol and pastoral care department of Beyond Worship Centre. Dedicated to caring for our Lead Pastors, receiving visiting ministers with utmost dignity, and providing executive ministerial support to ensure sacred order and honor in God's house.",
     responsibilities: [
       "Pastoral care, welfare, and executive support for the Lead Pastors",
       "VIP and visiting guest minister protocol and reception",
@@ -66,7 +66,7 @@ const EXPRESSIONS: DepartmentExpression[] = [
     tagline: "Living Beyond the Veil Through Sound and Worship",
     image: "/images/expression/souled%20out.jpg",
     description:
-      "Souled Out is the dynamic Church Choir and Music Ministry of Beyond Worship Center. Anointed vocalists, worship leaders, and skilled musicians who cultivate the sound of heavenly worship, leading worshippers beyond the veil into deep intimacy with the Father.",
+      "Souled Out is the dynamic Church Choir and Music Ministry of Beyond Worship Centre. Anointed vocalists, worship leaders, and skilled musicians who cultivate the sound of heavenly worship, leading worshippers beyond the veil into deep intimacy with the Father.",
     responsibilities: [
       "Leading praise and deep congregational worship in all services",
       "Vocal coaching, harmonic blending, and choral excellence",
@@ -102,7 +102,7 @@ const EXPRESSIONS: DepartmentExpression[] = [
     tagline: "Raising Kingdom Champions, Rooted in Grace",
     image: "/images/expression/heirs.jpg",
     description:
-      "Heirs is the Children's Department of Beyond Worship Center. We provide a fun, safe, loving, and spirit-filled sanctuary where kids discover their royal identity in Christ, learn the scriptures through creative arts, and grow in grace.",
+      "Heirs is the Children's Department of Beyond Worship Centre. We provide a fun, safe, loving, and spirit-filled sanctuary where kids discover their royal identity in Christ, learn the scriptures through creative arts, and grow in grace.",
     responsibilities: [
       "Creative Bible storytelling, interactive lessons, and memory verses",
       "Children's worship, dance, drama, and fun kingdom activities",
@@ -174,7 +174,7 @@ const EXPRESSIONS: DepartmentExpression[] = [
     tagline: "Pen of a Ready Writer, Chronicling God's Grace",
     image: "/images/expression/Scrybe.jpg",
     description:
-      "The Scrybe is the literary, media, and editorial expression of Beyond Worship Center. They record sermons, write daily devotionals, document prophetic chronicles and testimonies, and author compelling content across church publications and online media.",
+      "The Scrybe is the literary, media, and editorial expression of Beyond Worship Centre. They record sermons, write daily devotionals, document prophetic chronicles and testimonies, and author compelling content across church publications and online media.",
     responsibilities: [
       "Accurate sermon transcription and message highlight synthesis",
       "Editorial writing for blog articles, study guides, and books",
@@ -302,7 +302,7 @@ export function ExpressionsClient() {
               <span>Our Expressions</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed font-light mb-8 max-w-3xl mx-auto">
-              Discover the ministry departments and service expressions of Beyond Worship Center. Find your place to serve, grow in grace, and impact lives.
+              Discover the ministry departments and service expressions of Beyond Worship Centre. Find your place to serve, grow in grace, and impact lives.
             </p>
           </div>
         </div>
@@ -479,7 +479,7 @@ export function ExpressionsClient() {
               Ready to Find Your Place to Serve?
             </h2>
             <p className="text-white/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-8 font-light">
-              Every believer is blessed with spiritual gifts and talents to enrich the body of Christ. Step into purpose and partner with us in advancing the kingdom of God at Beyond Worship Center.
+              Every believer is blessed with spiritual gifts and talents to enrich the body of Christ. Step into purpose and partner with us in advancing the kingdom of God at Beyond Worship Centre.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

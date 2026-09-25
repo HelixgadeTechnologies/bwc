@@ -11,11 +11,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Beyond Worship Center | Living Beyond The Veil",
+  title: "Beyond Worship Centre | Living Beyond The Veil",
   description:
-    "Beyond Worship Center (BWC) is a Word-based, Worshipping, Empowering, and Supernatural family rooted in grace and truth. Experience authentic community, sound teaching, vibrant worship, and global impact in Port Harcourt, Nigeria.",
+    "Beyond Worship Centre (BWC) is a Word-based, Worshipping, Empowering, and Supernatural family rooted in grace and truth. Experience authentic community, sound teaching, vibrant worship, and global impact in Port Harcourt, Nigeria.",
   keywords: [
-    "Beyond Worship Center",
+    "Beyond Worship Centre",
     "BWC",
     "BWC Port Harcourt",
     "Beyond Worship",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     "Church in Port Harcourt",
     "Supernatural Church",
   ],
-  authors: [{ name: "Beyond Worship Center" }],
-  creator: "Beyond Worship Center",
-  publisher: "Beyond Worship Center",
+  authors: [{ name: "Beyond Worship Centre" }],
+  creator: "Beyond Worship Centre",
+  publisher: "Beyond Worship Centre",
   icons: {
     icon: [
       { url: "/bwc.png", type: "image/png" },
@@ -40,11 +40,11 @@ export const metadata: Metadata = {
     apple: "/bwc.png",
   },
   openGraph: {
-    title: "Beyond Worship Center | Living Beyond The Veil",
+    title: "Beyond Worship Centre | Living Beyond The Veil",
     description:
-      "A family of faith built on grace, worship, leadership, and supernatural living. Discover purpose, grow spiritually, and walk in victory at Beyond Worship Center in Port Harcourt, Nigeria.",
+      "A family of faith built on grace, worship, leadership, and supernatural living. Discover purpose, grow spiritually, and walk in victory at Beyond Worship Centre in Port Harcourt, Nigeria.",
     url: "https://beyondworshipcenter.org",
-    siteName: "Beyond Worship Center",
+    siteName: "Beyond Worship Centre",
     type: "website",
   },
 };

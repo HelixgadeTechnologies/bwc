@@ -12,15 +12,15 @@ interface HeroProps {
 const heroSlides = [
   {
     image: "/images/welcome-cover.png",
-    alt: "Beyond Worship Center - Living Beyond The Veil",
+    alt: "Beyond Worship Centre - Living Beyond The Veil",
   },
   {
     image: "/images/welcome-cover-1.png",
-    alt: "Beyond Worship Center - Community & Fellowship",
+    alt: "Beyond Worship Centre - Community & Fellowship",
   },
   {
     image: "/images/souledout.JPG",
-    alt: "Beyond Worship Center - Worship & Word",
+    alt: "Beyond Worship Centre - Worship & Word",
   },
 ];
 
@@ -111,7 +111,7 @@ export function Hero({ onPlanVisitClick, onWatchOnlineClick }: HeroProps) {
 
           {/* Heading */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-bold text-white mb-6 tracking-tight leading-[1.1] drop-shadow-md">
-            Welcome to Beyond Worship Center
+            Welcome to Beyond Worship Centre
           </h1>
 
           {/* Subtitle */}

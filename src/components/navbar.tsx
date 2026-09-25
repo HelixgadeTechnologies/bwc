@@ -265,7 +265,7 @@ export function Navbar({ onOpenGiveModal }: { onOpenGiveModal?: () => void }) {
               className="w-full py-3.5 bg-secondary text-dark font-display font-bold rounded-xl text-center shadow-secondary-glow flex items-center justify-center gap-2 cursor-pointer"
             >
               <Heart className="w-4 h-4 fill-current" />
-              Give to Beyond Worship Center
+              Give to Beyond Worship Centre
             </button>
             <button
               onClick={() => {

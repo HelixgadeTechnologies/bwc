@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Privacy Policy | Beyond Worship Center",
+  title: "Privacy Policy | Beyond Worship Centre",
 };
 
 export default function PrivacyPage() {
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
 
       <div className="py-8 space-y-6 text-sm text-gray-700 leading-relaxed">
         <p>
-          Beyond Worship Center is committed to protecting the privacy of members, visitors, and partners.
+          Beyond Worship Centre is committed to protecting the privacy of members, visitors, and partners.
           This policy explains how we collect, store, and manage your information when you interact with our
           online services, media apps, and church events.
         </p>

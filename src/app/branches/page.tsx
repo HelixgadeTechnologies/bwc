@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import { BranchesClient } from "./branches-client";
 
 export const metadata: Metadata = {
-  title: "Branches & Campuses | Beyond Worship Center",
+  title: "Branches & Campuses | Beyond Worship Centre",
   description:
-    "Find a Beyond Worship Center campus near you. Campuses in Port Harcourt (HQ), Lagos, Abuja, London, Houston, and worldwide.",
+    "Find a Beyond Worship Centre campus near you. Campuses in Port Harcourt (HQ), Lagos, Abuja, London, Houston, and worldwide.",
   openGraph: {
-    title: "Branches & Campuses | Beyond Worship Center",
-    description: "Find a Beyond Worship Center campus near you.",
+    title: "Branches & Campuses | Beyond Worship Centre",
+    description: "Find a Beyond Worship Centre campus near you.",
     url: "https://beyondworshipcenter.org/branches",
-    siteName: "Beyond Worship Center",
+    siteName: "Beyond Worship Centre",
     type: "website",
   },
 };

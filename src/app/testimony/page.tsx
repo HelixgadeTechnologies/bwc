@@ -36,7 +36,7 @@ export default function TestimonyPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/testimony.JPG"
-            alt="Share your testimony at Beyond Worship Center"
+            alt="Share your testimony at Beyond Worship Centre"
             fill
             priority
             sizes="100vw"

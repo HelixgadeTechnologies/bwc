@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Smartphone, Radio, BookOpen, Music, CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "BWC Lounge | Beyond Worship Center",
+  title: "BWC Lounge | Beyond Worship Centre",
   description:
     "Your everyday companion for life in Christ. Stream BWC Radio, access sermon notes, worship tracks, and daily teachings on the BWC Lounge app.",
 };

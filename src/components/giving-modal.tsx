@@ -64,7 +64,7 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
             <Heart className="w-5 h-5 fill-current text-secondary" />
             <span className="text-xs uppercase tracking-widest text-secondary font-bold">Offerings and Commitments</span>
           </div>
-          <h3 className="text-2xl font-display font-bold mt-1 text-white">Give to Beyond Worship Center</h3>
+          <h3 className="text-2xl font-display font-bold mt-1 text-white">Give to Beyond Worship Centre</h3>
           <p className="text-white/90 text-sm mt-1">
             &ldquo;Each of you should give what you have decided in your heart to give... for God loves a cheerful giver.&rdquo;
           </p>
@@ -122,7 +122,7 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
               </div>
               <h4 className="text-2xl font-bold font-display text-dark">Thank You for Your Generosity!</h4>
               <p className="text-gray-600 text-sm max-w-md mx-auto leading-relaxed">
-                Your partnership empowers Beyond Worship Center to take the gospel of grace and the love of God
+                Your partnership empowers Beyond Worship Centre to take the gospel of grace and the love of God
                 to communities across the world. May God multiply your seed sown!
               </p>
               <button
@@ -138,7 +138,7 @@ export function GivingModal({ isOpen, onClose }: GivingModalProps) {
               {activeTab === "transfer" && (
                 <div className="space-y-4 text-sm">
                   <p className="text-gray-600 text-xs leading-relaxed">
-                    Make a direct bank deposit or electronic funds transfer to Beyond Worship Center church accounts:
+                    Make a direct bank deposit or electronic funds transfer to Beyond Worship Centre church accounts:
                   </p>
 
                   {/* Account 1: Zenith Bank */}

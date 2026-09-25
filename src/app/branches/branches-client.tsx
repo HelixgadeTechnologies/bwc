@@ -40,7 +40,7 @@ export interface Branch {
 const BRANCHES: Branch[] = [
   {
     id: "ph-hq",
-    name: "Beyond Worship Center HQ (Port Harcourt)",
+    name: "Beyond Worship Centre HQ (Port Harcourt)",
     slug: "port-harcourt-hq",
     city: "Port Harcourt",
     region: "Rivers State",
@@ -61,7 +61,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "lagos-lekki",
-    name: "Beyond Worship Center Lagos (Lekki)",
+    name: "Beyond Worship Centre Lagos (Lekki)",
     slug: "lagos-lekki",
     city: "Lekki, Lagos",
     region: "Lagos State",
@@ -80,7 +80,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "lagos-mainland",
-    name: "Beyond Worship Center Lagos Mainland",
+    name: "Beyond Worship Centre Lagos Mainland",
     slug: "lagos-mainland",
     city: "Lagos Mainland",
     region: "Lagos State",
@@ -99,7 +99,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "abuja",
-    name: "Beyond Worship Center Abuja",
+    name: "Beyond Worship Centre Abuja",
     slug: "abuja",
     city: "Abuja",
     region: "Federal Capital Territory",
@@ -118,7 +118,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "london-uk",
-    name: "Beyond Worship Center UK (London)",
+    name: "Beyond Worship Centre UK (London)",
     slug: "london-uk",
     city: "London",
     region: "Greater London",
@@ -137,7 +137,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "houston-usa",
-    name: "Beyond Worship Center USA (Houston)",
+    name: "Beyond Worship Centre USA (Houston)",
     slug: "houston-usa",
     city: "Houston",
     region: "Texas",
@@ -156,7 +156,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "ghana-accra",
-    name: "Beyond Worship Center Ghana",
+    name: "Beyond Worship Centre Ghana",
     slug: "ghana-accra",
     city: "Accra",
     region: "Greater Accra",
@@ -175,7 +175,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "ireland-dublin",
-    name: "Beyond Worship Center Ireland",
+    name: "Beyond Worship Centre Ireland",
     slug: "ireland-dublin",
     city: "Dublin",
     region: "County Dublin",
@@ -194,7 +194,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "online-global",
-    name: "Beyond Worship Center Online (Global Campus)",
+    name: "Beyond Worship Centre Online (Global Campus)",
     slug: "online-global",
     city: "Online Global",
     region: "Worldwide",
@@ -271,7 +271,7 @@ export function BranchesClient() {
               <span>Our Branches</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed font-light mb-8 max-w-2xl mx-auto">
-              Find a Beyond Worship Center location near you and join our global family of faith.
+              Find a Beyond Worship Centre location near you and join our global family of faith.
             </p>
           </div>
         </div>
@@ -413,7 +413,7 @@ export function BranchesClient() {
               Can&apos;t Find a Branch Near You?
             </h2>
             <p className="text-white/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-8 font-light">
-              Join our online community and worship with us from anywhere in the world. Experience the Beyond Worship Center family through our live streams, online gist centres, and digital gatherings.
+              Join our online community and worship with us from anywhere in the world. Experience the Beyond Worship Centre family through our live streams, online gist centres, and digital gatherings.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

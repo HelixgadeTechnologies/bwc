@@ -21,7 +21,7 @@ export function CommunityCTA({ onPlanVisitClick }: CommunityCTAProps) {
         </h2>
 
         <p className="text-xl sm:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
-          We&apos;d love to welcome you to Beyond Worship Center. Come as you are and discover a place
+          We&apos;d love to welcome you to Beyond Worship Centre. Come as you are and discover a place
           where you belong, grow, and make a difference.
         </p>
 

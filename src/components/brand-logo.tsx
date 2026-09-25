@@ -20,7 +20,7 @@ export function BrandLogo({ className = "", light = true, size = "md" }: BrandLo
     <div className={`flex items-center group ${className}`}>
       <Image
         src="/bwc.png"
-        alt="Beyond Worship Center"
+        alt="Beyond Worship Centre"
         width={270}
         height={234}
         className={`${heightClasses} w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm`}

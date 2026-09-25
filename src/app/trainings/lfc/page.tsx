@@ -10,7 +10,7 @@ export default function LFCPage() {
     name: "",
     email: "",
     phone: "",
-    mode: "In-Person (Beyond Worship Center, Port Harcourt)",
+    mode: "In-Person (Beyond Worship Centre, Port Harcourt)",
   });
 
   const handleRegister = (e: React.FormEvent) => {
@@ -172,7 +172,7 @@ export default function LFCPage() {
                       onChange={(e) => setFormData({ ...formData, mode: e.target.value })}
                       className="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-dark outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
                     >
-                      <option>In-Person (Beyond Worship Center, Port Harcourt)</option>
+                      <option>In-Person (Beyond Worship Centre, Port Harcourt)</option>
                       <option>Online Classroom (Zoom / Interactive Portal)</option>
                     </select>
                   </div>

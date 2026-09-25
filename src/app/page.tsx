@@ -53,7 +53,7 @@ export default function HomePage() {
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
                 <span className="text-sm font-semibold tracking-wide">
-                  Beyond Worship Center • Live Service Stream
+                  Beyond Worship Centre • Live Service Stream
                 </span>
               </div>
               <button
@@ -67,7 +67,7 @@ export default function HomePage() {
             <div className="relative aspect-video w-full bg-black">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/live_stream?channel=UCv_bT6o-o86M9U4h_4A81Xw"
-                title="Beyond Worship Center Live Stream"
+                title="Beyond Worship Centre Live Stream"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full border-0"

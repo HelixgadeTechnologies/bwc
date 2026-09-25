@@ -54,7 +54,7 @@ const FAQS = [
   },
   {
     q: "What does BWC stand for?",
-    a: "BWC stands for Beyond Worship Center. Our mission is encapsulated in three words: Relate, Restore, Reign — building Christ-centred relationships and raising believers through the Gospel.",
+    a: "BWC stands for Beyond Worship Centre. Our mission is encapsulated in three words: Relate, Restore, Reign — building Christ-centred relationships and raising believers through the Gospel.",
   },
   {
     q: "How can I get connected?",
@@ -124,7 +124,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/contact.jpg"
-            alt="Beyond Worship Center — Contact Us"
+            alt="Beyond Worship Centre — Contact Us"
             fill
             priority
             sizes="100vw"
@@ -256,7 +256,7 @@ export default function ContactPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Beyond Worship Center Location"
+                    title="Beyond Worship Centre Location"
                   />
                 </div>
                 <a
@@ -286,7 +286,7 @@ export default function ContactPage() {
                     Message Sent!
                   </h3>
                   <p className="text-gray-600 max-w-sm mx-auto">
-                    Thank you for reaching out to Beyond Worship Center. A
+                    Thank you for reaching out to Beyond Worship Centre. A
                     member of our community team will respond to you shortly.
                   </p>
                   <button

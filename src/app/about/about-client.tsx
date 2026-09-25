@@ -29,7 +29,7 @@ export function AboutClient() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/about.jpg"
-            alt="Aerial view and gathering of Beyond Worship Center in Port Harcourt, Nigeria"
+            alt="Aerial view and gathering of Beyond Worship Centre in Port Harcourt, Nigeria"
             fill
             priority
             sizes="100vw"
@@ -125,7 +125,7 @@ export function AboutClient() {
 
               <div className="space-y-4 text-base sm:text-lg text-gray-1 leading-relaxed">
                 <p>
-                  <strong>Beyond Worship Center</strong> stands as a beacon of God&apos;s love in Christ Jesus,
+                  <strong>Beyond Worship Centre</strong> stands as a beacon of God&apos;s love in Christ Jesus,
                   here in Port Harcourt, Nigeria, and to the world at large. We are a place of love, peace, and joy for all who join us.
                 </p>
                 <p>
@@ -145,7 +145,7 @@ export function AboutClient() {
                       className="space-y-4 pt-2 overflow-hidden text-gray-700"
                     >
                       <p>
-                        Founded under apostolic grace, Beyond Worship Center began with a burning mandate:
+                        Founded under apostolic grace, Beyond Worship Centre began with a burning mandate:
                         to unveil the person of Jesus Christ, explain the unconditional gospel of His grace, and empower
                         believers to live supernatural lives as a daily reality.
                       </p>
@@ -156,7 +156,7 @@ export function AboutClient() {
                         leadership academies that transform professionals, creatives, and entrepreneurs.
                       </p>
                       <p>
-                        At Beyond Worship Center, you will never encounter condemnation. You will encounter the radical,
+                        At Beyond Worship Centre, you will never encounter condemnation. You will encounter the radical,
                         transforming love of Jesus that restores dignity, releases purpose, and equips you to thrive beyond limitations.
                       </p>
                     </motion.div>
@@ -178,7 +178,7 @@ export function AboutClient() {
               <div className="relative h-[420px] sm:h-[520px] rounded-3xl overflow-hidden shadow-2xl bg-dark/10 group">
                 <Image
                   src="/images/ourstory.jpg"
-                  alt="Beyond Worship Center — Our Story"
+                  alt="Beyond Worship Centre — Our Story"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -275,7 +275,7 @@ export function AboutClient() {
               Mission, Vision &amp; Purpose
             </h2>
             <p className="text-gray-600 text-base sm:text-lg">
-              The spiritual mandate, heartbeat, and compass driving everything we do at Beyond Worship Center.
+              The spiritual mandate, heartbeat, and compass driving everything we do at Beyond Worship Centre.
             </p>
           </div>
 
@@ -385,7 +385,7 @@ export function AboutClient() {
                 <div className="relative h-[540px] sm:h-[660px] lg:h-[750px] rounded-3xl overflow-hidden shadow-elegant bg-[#212120]/5 flex items-center justify-center">
                   <Image
                     src="/images/pastUD.jpg"
-                    alt="Pastor Udochukwu Nwanma, Lead Pastor of Beyond Worship Center"
+                    alt="Pastor Udochukwu Nwanma, Lead Pastor of Beyond Worship Centre"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-top"
@@ -405,13 +405,13 @@ export function AboutClient() {
                     Pastor Udochukwu Nwanma
                   </h3>
                   <p className="text-lg sm:text-xl text-primary font-display font-semibold">
-                    Lead Pastor, Beyond Worship Center
+                    Lead Pastor, Beyond Worship Centre
                   </p>
                 </div>
 
                 <div className="space-y-4 text-base sm:text-lg text-gray-1 leading-relaxed">
                   <p>
-                    <strong>Pastor Udochukwu Nwanma</strong> is the Lead Pastor of Beyond Worship Center,
+                    <strong>Pastor Udochukwu Nwanma</strong> is the Lead Pastor of Beyond Worship Centre,
                     headquartered in Port Harcourt, Nigeria, and ministering to a thriving global fellowship of believers.
                     An anointed teacher of the Word and visionary shepherd, he carries an apostolic mandate to unveil the
                     unconditional love of God, the gospel of His grace, and the transformative power of authentic worship.
@@ -422,7 +422,7 @@ export function AboutClient() {
                     fostering spiritual depth and inspiring individuals to step boldly into their divine callings.
                   </p>
                   <p>
-                    Under his leadership, Beyond Worship Center has grown into a dynamic sanctuary of hope, healing, and supernatural
+                    Under his leadership, Beyond Worship Centre has grown into a dynamic sanctuary of hope, healing, and supernatural
                     empowerment where worship transcends routines and ushers believers into life-transforming intimacy with the Father.
                   </p>
 
@@ -441,7 +441,7 @@ export function AboutClient() {
                           grounded in biblical truth and walking in the fullness of their identity as children of God.
                         </p>
                         <p>
-                          Happily married to Pastor Chika UD Nwanma, they co-labor as Lead Pastors of Beyond Worship Center,
+                          Happily married to Pastor Chika UD Nwanma, they co-labor as Lead Pastors of Beyond Worship Centre,
                           exemplifying kingdom family values and inspiring the body of Christ with their tireless devotion to the Gospel.
                         </p>
                       </motion.div>
@@ -466,7 +466,7 @@ export function AboutClient() {
                 <div className="relative h-[540px] sm:h-[660px] lg:h-[750px] rounded-3xl overflow-hidden shadow-elegant bg-[#212120]/5 flex items-center justify-center">
                   <Image
                     src="/images/chika.jpg"
-                    alt="Pastor Chika UD Nwanma, Co Lead Pastor at Beyond Worship Center"
+                    alt="Pastor Chika UD Nwanma, Co Lead Pastor at Beyond Worship Centre"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-top"
@@ -485,18 +485,18 @@ export function AboutClient() {
                     Pastor Chika UD Nwanma
                   </h3>
                   <p className="text-lg sm:text-xl text-primary font-display font-semibold">
-                    Co Lead Pastor, Beyond Worship Center
+                    Co Lead Pastor, Beyond Worship Centre
                   </p>
                 </div>
 
                 <div className="space-y-4 text-base sm:text-lg text-gray-1 leading-relaxed">
                   <p>
-                    <strong>Pastor Chika UD Nwanma</strong> serves as Co Lead Pastor at Beyond Worship Center alongside her husband,
+                    <strong>Pastor Chika UD Nwanma</strong> serves as Co Lead Pastor at Beyond Worship Centre alongside her husband,
                     Pastor Udochukwu Nwanma. A woman of prayer, profound grace, and spiritual discernment, she ministers with
                     warmth, wisdom, and an unwavering commitment to the spiritual and emotional wholeness of the flock.
                   </p>
                   <p>
-                    Pastor Chika plays a central role in guiding church life, pastoral care, and discipleship across Beyond Worship Center.
+                    Pastor Chika plays a central role in guiding church life, pastoral care, and discipleship across Beyond Worship Centre.
                     Her heart is deeply rooted in empowering believers, building strong Christian families, and championing women
                     to discover their divine identity and purpose in God.
                   </p>
@@ -519,7 +519,7 @@ export function AboutClient() {
                           that inspire believers to flourish in their marriages, careers, and spiritual walk with God.
                         </p>
                         <p>
-                          Together with Pastor Udochukwu, she continues to steer Beyond Worship Center with integrity, boundless love,
+                          Together with Pastor Udochukwu, she continues to steer Beyond Worship Centre with integrity, boundless love,
                           and vision, cultivating a thriving spiritual family that impacts Port Harcourt and communities worldwide.
                         </p>
                       </motion.div>

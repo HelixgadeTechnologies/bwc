@@ -20,7 +20,7 @@ const WEEKS = [
     week: "Week 1",
     title: "BWC Identity",
     description:
-      "Understanding the vision, mission, kingdom mandate, and core identity that define Beyond Worship Center as a Christ-centred community.",
+      "Understanding the vision, mission, kingdom mandate, and core identity that define Beyond Worship Centre as a Christ-centred community.",
   },
   {
     week: "Week 2",
@@ -108,7 +108,7 @@ export default function TrainingsPage() {
 
           <p className="text-lg sm:text-xl text-white/85 font-light leading-relaxed max-w-2xl mx-auto mb-8">
             A six-week intensive programme designed to equip and deploy passionate
-            believers into active service within the Beyond Worship Center family.
+            believers into active service within the Beyond Worship Centre family.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">

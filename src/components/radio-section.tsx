@@ -28,7 +28,7 @@ export function RadioSection() {
 
         {/* Subtitle */}
         <p className="text-xl text-gray-1 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-          Stay connected with live worship, teachings, and uplifting music 24/7 from Beyond Worship Center
+          Stay connected with live worship, teachings, and uplifting music 24/7 from Beyond Worship Centre
         </p>
 
         {/* Audio Player Trigger */}

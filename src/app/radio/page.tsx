@@ -65,7 +65,7 @@ export default function RadioPage() {
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 font-light leading-relaxed max-w-2xl mx-auto mb-10">
             Immerse yourself in non-stop anointed teachings of grace, apostolic revelation,
-            and prophetic atmospheres from Beyond Worship Center wherever you are in the world.
+            and prophetic atmospheres from Beyond Worship Centre wherever you are in the world.
           </p>
 
           {/* Large Live Visualizer Deck */}
@@ -219,7 +219,7 @@ export default function RadioPage() {
               Sermons in Rotation
             </h2>
             <p className="text-gray-600 text-sm mt-2">
-              Continuous 24/7 teachings broadcast from Beyond Worship Center. Click any sermon to tune in.
+              Continuous 24/7 teachings broadcast from Beyond Worship Centre. Click any sermon to tune in.
             </p>
           </div>
 

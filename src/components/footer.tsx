@@ -29,7 +29,7 @@ export function Footer() {
             </Link>
 
             <p className="text-gray-300 text-sm leading-relaxed">
-              Beyond Worship Center (B.W.C) — A family of faith, worship, and supernatural living.
+              Beyond Worship Centre (B.W.C) — A family of faith, worship, and supernatural living.
             </p>
 
             <div className="space-y-3 pt-2">
@@ -250,7 +250,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-gray-400">
-            <p>© {new Date().getFullYear()} Beyond Worship Center. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Beyond Worship Centre. All rights reserved.</p>
             <p className="flex items-center gap-1.5 text-xs text-gray-400">
               Built with ❤️ by{" "}
               <a

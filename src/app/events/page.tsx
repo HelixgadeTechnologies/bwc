@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Calendar, Clock, MapPin, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Events | Beyond Worship Center",
+  title: "Events | Beyond Worship Centre",
   description:
-    "Explore upcoming gatherings, worship services, conferences, and training sessions at Beyond Worship Center.",
+    "Explore upcoming gatherings, worship services, conferences, and training sessions at Beyond Worship Centre.",
 };
 
 const allEvents = [
@@ -17,7 +17,7 @@ const allEvents = [
     badgeColor: "#10B981",
     date: "Sep 21, 2026",
     time: "4:30 PM",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "BWC Foundation Class equips believers with a solid spiritual foundation, grounding new and growing Christians in faith and truth.",
     href: "/trainings/lfc",
@@ -30,7 +30,7 @@ const allEvents = [
     badgeColor: "#F59E0B",
     date: "Sep 30 - Oct 4, 2026",
     time: "4:00 PM Daily",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "Spirit & Power Conference 2026 — a time to be reminded of your supernatural identity in Christ and activated for His purposes.",
     href: "#",
@@ -43,7 +43,7 @@ const allEvents = [
     image: "/images/midweek_koinonia.png",
     date: "Every Wednesday",
     time: "5:00 PM",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "Midweek Service is our family gathering featuring prayers, word, and interactive Questions & Answers.",
     href: "#",
@@ -56,7 +56,7 @@ const allEvents = [
     badgeColor: "#077BAE",
     date: "Every Sunday",
     time: "10:00 AM",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "Experience high-energy worship, revelation teachings, and the love of God in a vibrant fellowship atmosphere.",
     href: "/contact",
@@ -76,7 +76,7 @@ export default function EventsPage() {
             Church Events
           </h1>
           <p className="text-lg text-gray-300 font-light max-w-2xl mx-auto">
-            Stay plugged into what God is doing at Beyond Worship Center across our campuses and online streams.
+            Stay plugged into what God is doing at Beyond Worship Centre across our campuses and online streams.
           </p>
         </div>
       </section>

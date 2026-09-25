@@ -30,7 +30,7 @@ const events: ChurchEvent[] = [
     badgeBg: "#10B981",
     date: "Sep 21, 2026",
     time: "4:30 PM",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "BWC Foundation Class equips believers with a solid spiritual foundation, grounding new and growing Christians in faith and truth.",
     href: "/trainings/lfc",
@@ -44,7 +44,7 @@ const events: ChurchEvent[] = [
     badgeBg: "#F59E0B",
     date: "Sep 30, 2026",
     time: "4:00 PM",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "Spirit & Power Conference 2026 — a time to be reminded of your supernatural identity in Christ and activated for His purposes.",
     href: "/events",
@@ -57,7 +57,7 @@ const events: ChurchEvent[] = [
     image: "/images/midweek_koinonia.png",
     date: "Every Wednesday",
     time: "5:00 PM",
-    location: "Beyond Worship Center (Port Harcourt)",
+    location: "Beyond Worship Centre (Port Harcourt)",
     description:
       "Midweek Service is our family gathering featuring prayers, word, and interactive Questions & Answers.",
     href: "/events",

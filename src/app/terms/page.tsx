@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Terms of Use | Beyond Worship Center",
+  title: "Terms of Use | Beyond Worship Centre",
 };
 
 export default function TermsPage() {
@@ -14,13 +14,13 @@ export default function TermsPage() {
 
       <div className="py-8 space-y-6 text-sm text-gray-700 leading-relaxed">
         <p>
-          Welcome to the official digital platform of Beyond Worship Center.
+          Welcome to the official digital platform of Beyond Worship Centre.
           By accessing this website, mobile services, and media streams, you agree to comply with the terms set forth herein.
         </p>
 
         <h2 className="text-xl font-bold font-display text-dark">Intellectual Property</h2>
         <p>
-          All sermon audio recordings, video broadcasts, text articles, graphics, and music produced by Beyond Worship Center
+          All sermon audio recordings, video broadcasts, text articles, graphics, and music produced by Beyond Worship Centre
           are protected under international copyright conventions and are provided for personal edification and non-commercial ministry distribution.
         </p>
       </div>

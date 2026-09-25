@@ -48,7 +48,7 @@ export function PlanVisitModal({ isOpen, onClose }: PlanVisitModalProps) {
           <span className="text-xs uppercase tracking-widest text-secondary font-bold">Welcome Home</span>
           <h3 className="text-2xl font-display font-bold mt-1 text-white">Plan Your Visit</h3>
           <p className="text-white/90 text-sm mt-1">
-            We are excited to host you this Sunday at Beyond Worship Center!
+            We are excited to host you this Sunday at Beyond Worship Centre!
           </p>
         </div>
 

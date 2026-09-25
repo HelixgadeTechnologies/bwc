@@ -28,7 +28,7 @@ export default function GivePage() {
           </h1>
           <p className="text-xl text-gray-300 font-light leading-relaxed max-w-2xl mx-auto mb-8">
             Your giving empowers the expansion of God&apos;s kingdom and takes the revelation of His unconditional
-            grace to cities, campuses, and nations worldwide through Beyond Worship Center.
+            grace to cities, campuses, and nations worldwide through Beyond Worship Centre.
           </p>
           <button
             onClick={openGiving}
