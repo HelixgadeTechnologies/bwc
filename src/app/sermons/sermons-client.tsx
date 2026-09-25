@@ -17,6 +17,7 @@ import {
   User,
   ArrowRight,
   ExternalLink,
+  Headphones,
 } from "lucide-react";
 import { useAudioPlayer } from "@/context/audio-context";
 
@@ -30,6 +31,7 @@ export interface SermonSeries {
   year: string;
   image: string;
   category: string;
+  audioUrl?: string;
   description: string;
 }
 
@@ -43,149 +45,154 @@ export interface SermonItem {
   category: string;
   image: string;
   youtubeId?: string;
+  audioUrl?: string;
   description: string;
 }
 
 const SERMON_SERIES: SermonSeries[] = [
   {
-    id: "series-1",
-    name: "Righteousness of Faith",
-    subtitle: "Cease from Struggling",
-    slug: "righteousness-of-faith",
-    messageCount: "5 Parts",
+    id: "series-face-to-face",
+    name: "Face 2 Face",
+    subtitle: "Face to Face with the Father",
+    slug: "face-2-face",
+    messageCount: "3 Parts • Audio",
     speaker: "Pastor Udochukwu Nwanma",
     year: "2026",
-    image: "/images/word-cover.jpg",
+    image: "/images/pastUD.jpg",
+    category: "Intimacy",
+    audioUrl: "/sermon/pastor-ud-face-to-face.mp3",
+    description: "A systematic 3-part revelational study into seeking God's manifest presence, living in daily communion, and beholding His glory without veil.",
+  },
+  {
+    id: "series-kingdom-faith",
+    name: "Kingdom Faith",
+    subtitle: "Standing Strong in the Promises",
+    slug: "kingdom-faith",
+    messageCount: "Audio Message",
+    speaker: "Pastor Udochukwu Nwanma",
+    year: "2026",
+    image: "/images/pastUD.jpg",
+    category: "Faith",
+    audioUrl: "/sermon/pastor-ud-dont-give-up.mp3",
+    description: "Anointed spiritual empowerment to overcome adversity, hold fast to your faith confession, and see God's victory.",
+  },
+  {
+    id: "series-love-walk",
+    name: "The Love Walk",
+    subtitle: "Living the Love Life",
+    slug: "the-love-walk",
+    messageCount: "Audio Series",
+    speaker: "Pastor Chika UD Nwanma",
+    year: "2026",
+    image: "/images/chika.jpg",
     category: "Grace",
-    description: "Understanding righteousness as an irrevocable gift of grace, completely separate from religious works.",
+    audioUrl: "/sermon/pst-chika-living-the-love-life.mp3",
+    description: "Walking in the unconditional love of Christ that heals brokenness, empowers relationships, and endures all things.",
   },
   {
-    id: "series-2",
-    name: "RELATE. RESTORE. REIGN.",
-    subtitle: "The Mandate of the Finished Work",
-    slug: "relate-restore-reign",
-    messageCount: "4 Parts",
+    id: "series-kingdom-authority",
+    name: "Kingdom Authority",
+    subtitle: "Spiritual Warfare from the Finished Work",
+    slug: "kingdom-authority",
+    messageCount: "Audio Series",
     speaker: "Pastor Udochukwu Nwanma",
     year: "2026",
-    image: "/images/love_life_impact.png",
-    category: "Identity",
-    description: "How God's grace anchors believers to relate authentically, experience supernatural restoration, and reign in kingdom authority.",
-  },
-  {
-    id: "series-3",
-    name: "The Multiplier's Anointing",
-    subtitle: "Supernatural Supply & Increase",
-    slug: "the-multipliers-anointing",
-    messageCount: "3 Parts",
-    speaker: "Pastor Udochukwu Nwanma",
-    year: "2026",
-    image: "/images/welcome-cover-2.png",
+    image: "/images/pastUD.jpg",
     category: "Supernatural",
-    description: "Nothing dies in your hands. Activating the divine advantage that causes everything you touch to flourish.",
-  },
-  {
-    id: "series-4",
-    name: "Spirit & Power",
-    subtitle: "Walking in Kingdom Authority",
-    slug: "spirit-and-power",
-    messageCount: "6 Parts",
-    speaker: "Pastor Udochukwu Nwanma",
-    year: "2026",
-    image: "/images/midweek_koinonia.png",
-    category: "Holy Spirit",
-    description: "A deep immersion into spiritual empowerment, prophetic intimacy, and demonstrable kingdom power.",
+    audioUrl: "/sermon/pst-ud-spiritual-warfare-part-2.mp3",
+    description: "Operating from the seated position of victory in Christ Jesus, ruling over darkness with spiritual authority.",
   },
 ];
 
 const SERMONS: SermonItem[] = [
   {
-    id: "sermon-1",
-    title: "The Gift of Righteousness: Cease from Struggling",
-    series: "Righteousness of Faith",
+    id: "sermon-face-to-face-pt1",
+    title: "Face 2 Face (Part 1)",
+    series: "Face 2 Face",
+    speaker: "Pastor Udochukwu Nwanma",
+    date: "Sep 25, 2026",
+    duration: "55m",
+    category: "Intimacy",
+    image: "/images/pastUD.jpg",
+    audioUrl: "/sermon/pastor-ud-face-to-face.mp3",
+    description:
+      "Part 1 of the Face 2 Face series. A profound journey into seeking God's presence, experiencing direct communion with the Father, and transforming from glory to glory.",
+  },
+  {
+    id: "sermon-face-to-face-pt2",
+    title: "Face 2 Face (Part 2)",
+    series: "Face 2 Face",
+    speaker: "Pastor Udochukwu Nwanma",
+    date: "Sep 24, 2026",
+    duration: "1h 05m",
+    category: "Intimacy",
+    image: "/images/pastUD.jpg",
+    audioUrl: "/sermon/pastor-ud-face-to-face-pt2.mp3",
+    description:
+      "Part 2 of the Face 2 Face series. Beholding the glory of the Lord with unveiled face and walking in uninterrupted fellowship with the Holy Spirit.",
+  },
+  {
+    id: "sermon-face-to-face-pt3",
+    title: "Face 2 Face (Part 3)",
+    series: "Face 2 Face",
+    speaker: "Pastor Udochukwu Nwanma",
+    date: "Sep 23, 2026",
+    duration: "46m",
+    category: "Intimacy",
+    image: "/images/pastUD.jpg",
+    audioUrl: "/sermon/pastor-ud-face-to-face-pt3.mp3",
+    description:
+      "The concluding climax of the Face 2 Face series. Entering the secret place of the Most High, establishing your spiritual altar, and carrying divine power.",
+  },
+  {
+    id: "sermon-dont-give-up",
+    title: "Don't Give Up",
+    series: "Kingdom Faith",
+    speaker: "Pastor Udochukwu Nwanma",
+    date: "Sep 22, 2026",
+    duration: "1h 06m",
+    category: "Faith",
+    image: "/images/pastUD.jpg",
+    audioUrl: "/sermon/pastor-ud-dont-give-up.mp3",
+    description:
+      "An anointed message of endurance and unshakeable conviction. Standing strong amidst trials, knowing that the God who promised is faithful to perform.",
+  },
+  {
+    id: "sermon-living-love-life",
+    title: "Living the Love Life",
+    series: "The Love Walk",
+    speaker: "Pastor Chika UD Nwanma",
+    date: "Sep 21, 2026",
+    duration: "58m",
+    category: "Grace",
+    image: "/images/chika.jpg",
+    audioUrl: "/sermon/pst-chika-living-the-love-life.mp3",
+    description:
+      "Understanding the power of God's unconditional love working in and through us to impact marriages, families, and communities.",
+  },
+  {
+    id: "sermon-spiritual-warfare-2",
+    title: "Spiritual Warfare (Part 2)",
+    series: "Kingdom Authority",
     speaker: "Pastor Udochukwu Nwanma",
     date: "Sep 20, 2026",
-    duration: "1h 14m",
-    category: "Grace",
-    image: "/images/word-cover.jpg",
-    youtubeId: "v4_3m4bK7yY",
-    description:
-      "Religious traditions teach that righteousness must be earned. Discover the finished work of Jesus where you stand complete and justified.",
-  },
-  {
-    id: "sermon-2",
-    title: "RELATE. RESTORE. REIGN. — Walking in Kingdom Dominion",
-    series: "RELATE. RESTORE. REIGN.",
-    speaker: "Pastor Udochukwu Nwanma",
-    date: "Sep 13, 2026",
-    duration: "1h 08m",
-    category: "Identity",
-    image: "/images/love_life_impact.png",
-    youtubeId: "v4_3m4bK7yY",
-    description:
-      "How God's sacrificial grace anchors your soul to relate deeply with God, receive total restoration, and reign with Christ in culture.",
-  },
-  {
-    id: "sermon-3",
-    title: "Nothing Dies in My Hands: Operating in Multiplication",
-    series: "The Multiplier's Anointing",
-    speaker: "Pastor Udochukwu Nwanma",
-    date: "Sep 06, 2026",
-    duration: "58m",
+    duration: "1h 02m",
     category: "Supernatural",
-    image: "/images/welcome-cover-2.png",
-    youtubeId: "v4_3m4bK7yY",
+    image: "/images/pastUD.jpg",
+    audioUrl: "/sermon/pst-ud-spiritual-warfare-part-2.mp3",
     description:
-      "When the presence of God resides within you, scarcity is swallowed up by divine supply. Discover how to stir the multiplier's anointing.",
-  },
-  {
-    id: "sermon-4",
-    title: "Living in Divine Authority: No Condemnation",
-    series: "Righteousness of Faith",
-    speaker: "Pastor Udochukwu Nwanma",
-    date: "Aug 30, 2026",
-    duration: "1h 22m",
-    category: "Grace",
-    image: "/images/about.png",
-    youtubeId: "v4_3m4bK7yY",
-    description:
-      "There is now therefore no condemnation for those in Christ Jesus. Walking boldly into the presence of the Father without shame.",
-  },
-  {
-    id: "sermon-5",
-    title: "The Helper Within: Fellowship with the Holy Spirit",
-    series: "Spirit & Power",
-    speaker: "Pastor Chika UD Nwanma",
-    date: "Aug 23, 2026",
-    duration: "52m",
-    category: "Holy Spirit",
-    image: "/images/PMaks-3.jpg",
-    youtubeId: "v4_3m4bK7yY",
-    description:
-      "Deepening your everyday sensitivity to the Holy Spirit as your advocate, comforter, and supernatural strategist.",
-  },
-  {
-    id: "sermon-6",
-    title: "Wisdom for Marketplace Dominion",
-    series: "Supernatural",
-    speaker: "Pastor Udochukwu Nwanma",
-    date: "Aug 16, 2026",
-    duration: "1h 05m",
-    category: "Leadership",
-    image: "/images/pflo.png",
-    youtubeId: "v4_3m4bK7yY",
-    description:
-      "How spiritual wisdom and strategic competence combine to position believers at the cutting edge of industry and innovation.",
+      "Standing firm in Christ's finished work, operating from a position of seated authority, and disarming every device of darkness.",
   },
 ];
 
-const CATEGORIES = ["All", "Grace", "Identity", "Supernatural", "Holy Spirit", "Leadership"];
+const CATEGORIES = ["All", "Intimacy", "Grace", "Faith", "Supernatural"];
 
 export function SermonsClient() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [activeVideo, setActiveVideo] = useState<SermonItem | null>(null);
 
-  const { playTrack, isPlaying } = useAudioPlayer();
+  const { playTrack, togglePlay, isPlaying } = useAudioPlayer();
 
   // Search filtering
   const isSearching = searchQuery.trim().length > 0;
@@ -223,11 +230,11 @@ export function SermonsClient() {
   }, [searchQuery, selectedCategory, isSearching]);
 
   const handlePlaySermon = (sermon: SermonItem) => {
-    playTrack(sermon.title, `${sermon.speaker} • ${sermon.series}`);
+    playTrack(sermon.title, `${sermon.speaker} • ${sermon.series}`, sermon.audioUrl);
   };
 
   const handlePlayLiveRadio = () => {
-    playTrack("BWC Radio Live 24/7", "Beyond Worship Center Global Stream");
+    togglePlay();
   };
 
   return (
@@ -310,7 +317,12 @@ export function SermonsClient() {
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {filteredSeries.map((s) => (
-                      <SeriesCard key={s.id} series={s} onSelect={() => setSearchQuery(s.name)} />
+                      <SeriesCard
+                        key={s.id}
+                        series={s}
+                        onSelect={() => setSearchQuery(s.name)}
+                        onPlay={s.audioUrl ? () => playTrack(s.name, `${s.speaker} • Series Audio`, s.audioUrl) : undefined}
+                      />
                     ))}
                   </div>
                 </section>
@@ -361,7 +373,12 @@ export function SermonsClient() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                   {SERMON_SERIES.map((s) => (
-                    <SeriesCard key={s.id} series={s} onSelect={() => setSearchQuery(s.name)} />
+                    <SeriesCard
+                      key={s.id}
+                      series={s}
+                      onSelect={() => setSearchQuery(s.name)}
+                      onPlay={s.audioUrl ? () => playTrack(s.name, `${s.speaker} • Series Audio`, s.audioUrl) : undefined}
+                    />
                   ))}
                 </div>
               </section>
@@ -508,9 +525,11 @@ export function SermonsClient() {
 function SeriesCard({
   series,
   onSelect,
+  onPlay,
 }: {
   series: SermonSeries;
   onSelect: () => void;
+  onPlay?: () => void;
 }) {
   return (
     <div
@@ -523,16 +542,37 @@ function SeriesCard({
           alt={series.name}
           fill
           sizes="(max-width: 768px) 100vw, 25vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#212120]/90 via-[#212120]/20 to-transparent" />
 
-        {/* Part Count Badge */}
-        <div className="absolute top-4 right-4">
+        {/* Part Count Badge & Audio Badge */}
+        <div className="absolute top-4 right-4 flex items-center gap-1.5 flex-wrap justify-end">
+          {series.audioUrl && (
+            <span className="px-2.5 py-1 bg-emerald-600 text-white text-[11px] font-semibold rounded-full shadow-md flex items-center gap-1 backdrop-blur-sm">
+              <Headphones className="w-3 h-3" />
+              <span>Audio</span>
+            </span>
+          )}
           <span className="px-3 py-1 bg-black/60 backdrop-blur-md text-white text-xs font-semibold rounded-full border border-white/20">
             {series.messageCount}
           </span>
         </div>
+
+        {onPlay && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onPlay();
+            }}
+            aria-label={`Play audio from ${series.name}`}
+            className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+          >
+            <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-xl transform hover:scale-110 active:scale-95 transition-all">
+              <Play className="w-5 h-5 fill-current ml-0.5" />
+            </div>
+          </button>
+        )}
 
         <div className="absolute bottom-4 left-4 right-4 text-white">
           <span className="text-[11px] font-bold uppercase tracking-wider text-primary-300">
@@ -546,10 +586,24 @@ function SeriesCard({
 
       <div className="p-5 flex items-center justify-between text-xs text-gray-500 border-t border-gray-50">
         <span>{series.speaker}</span>
-        <span className="text-primary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-          <span>Explore</span>
-          <ArrowRight className="w-3.5 h-3.5" />
-        </span>
+        <div className="flex items-center gap-2">
+          {onPlay && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onPlay();
+              }}
+              className="text-emerald-700 hover:text-emerald-800 font-semibold flex items-center gap-1 bg-emerald-50 px-2.5 py-1 rounded-full cursor-pointer hover:bg-emerald-100 transition-colors"
+            >
+              <Play className="w-3 h-3 fill-current" />
+              <span>Listen</span>
+            </button>
+          )}
+          <span className="text-primary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            <span>Explore</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -574,7 +628,7 @@ function SermonCard({
             alt={sermon.title}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+            className="object-cover object-top group-hover:scale-105 transition-transform duration-500 opacity-90"
           />
           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
 
@@ -590,10 +644,16 @@ function SermonCard({
           </button>
 
           {/* Badges */}
-          <div className="absolute top-3 left-3">
+          <div className="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
             <span className="px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full shadow-md">
               {sermon.category}
             </span>
+            {sermon.audioUrl && (
+              <span className="px-2.5 py-1 bg-emerald-600 text-white text-[11px] font-semibold rounded-full shadow-md flex items-center gap-1">
+                <Headphones className="w-3 h-3" />
+                <span>Audio</span>
+              </span>
+            )}
           </div>
           <div className="absolute bottom-3 right-3">
             <span className="px-2.5 py-1 bg-black/70 backdrop-blur-sm text-white text-xs font-medium rounded-full flex items-center gap-1">
@@ -635,14 +695,16 @@ function SermonCard({
           className="flex-1 py-3 px-4 rounded-xl bg-gradient-primary text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-md hover:shadow-primary-glow transition-all active:scale-95 cursor-pointer"
         >
           <Play className="w-4 h-4 fill-current" />
-          <span>Listen Now</span>
+          <span>{sermon.audioUrl ? "Listen Audio" : "Listen Now"}</span>
         </button>
-        <button
-          onClick={onWatch}
-          className="py-3 px-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-dark text-xs sm:text-sm font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-95 cursor-pointer"
-        >
-          <span>Watch</span>
-        </button>
+        {sermon.youtubeId && (
+          <button
+            onClick={onWatch}
+            className="py-3 px-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-dark text-xs sm:text-sm font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+          >
+            <span>Watch</span>
+          </button>
+        )}
       </div>
     </div>
   );

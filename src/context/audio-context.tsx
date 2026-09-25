@@ -1,6 +1,7 @@
 "use client";
 
-import React, { createContext, useContext, useState, useRef, useEffect } from "react";
+import React, { createContext, useContext, useState, useRef, useEffect, useCallback } from "react";
+import { BWC_RADIO_TRACKS, RadioTrack } from "@/data/radio-tracks";
 
 interface AudioContextType {
   isPlaying: boolean;
@@ -13,43 +14,115 @@ interface AudioContextType {
   trackSubtitle: string;
   isVisible: boolean;
   setIsVisible: (val: boolean) => void;
+
+  // Radio Playlist & Scrubber Controls
+  tracks: RadioTrack[];
+  currentTrackIndex: number;
+  currentTrack: RadioTrack;
+  playNextTrack: () => void;
+  playPreviousTrack: () => void;
+  playTrackByIndex: (index: number) => void;
+  currentTime: number;
+  duration: number;
+  seekTo: (time: number) => void;
 }
 
 const AudioContext = createContext<AudioContextType | undefined>(undefined);
 
-// Stream URL with reliable live stream audio
-const DEFAULT_STREAM_URL = "https://stream.zeno.fm/46b4129x8wzuv";
-
 export function AudioPlayerProvider({ children }: { children: React.ReactNode }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolumeState] = useState(0.8);
-  const [trackTitle, setTrackTitle] = useState("BWC Radio 24/7");
-  const [trackSubtitle, setTrackSubtitle] = useState("Beyond Worship Center • Live Atmosphere");
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const currentTrack = BWC_RADIO_TRACKS[currentTrackIndex] || BWC_RADIO_TRACKS[0];
+
+  const [trackTitle, setTrackTitle] = useState(currentTrack.title);
+  const [trackSubtitle, setTrackSubtitle] = useState(`${currentTrack.speaker} • ${currentTrack.series}`);
   const [isVisible, setIsVisible] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(currentTrack.durationSeconds || 0);
+
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const currentTrackIndexRef = useRef(currentTrackIndex);
+  currentTrackIndexRef.current = currentTrackIndex;
+
+  const playTrackByIndex = useCallback((index: number) => {
+    const targetTrack = BWC_RADIO_TRACKS[index];
+    if (!targetTrack) return;
+
+    setCurrentTrackIndex(index);
+    setTrackTitle(targetTrack.title);
+    setTrackSubtitle(`${targetTrack.speaker} • ${targetTrack.series}`);
+    setDuration(targetTrack.durationSeconds);
+    setCurrentTime(0);
+    setIsVisible(true);
+
+    if (audioRef.current) {
+      audioRef.current.src = targetTrack.src;
+      audioRef.current
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch(() => setIsPlaying(false));
+    }
+  }, []);
+
+  const playNextTrack = useCallback(() => {
+    const nextIndex = (currentTrackIndexRef.current + 1) % BWC_RADIO_TRACKS.length;
+    playTrackByIndex(nextIndex);
+  }, [playTrackByIndex]);
+
+  const playPreviousTrack = useCallback(() => {
+    const prevIndex =
+      (currentTrackIndexRef.current - 1 + BWC_RADIO_TRACKS.length) % BWC_RADIO_TRACKS.length;
+    playTrackByIndex(prevIndex);
+  }, [playTrackByIndex]);
 
   useEffect(() => {
-    audioRef.current = new Audio(DEFAULT_STREAM_URL);
-    audioRef.current.preload = "none";
+    const initialTrack = BWC_RADIO_TRACKS[0];
+    audioRef.current = new Audio(initialTrack.src);
+    audioRef.current.preload = "metadata";
     audioRef.current.volume = volume;
 
-    const handleEnded = () => setIsPlaying(false);
+    const handleEnded = () => {
+      // Continuous Radio Auto-Advance
+      const nextIdx = (currentTrackIndexRef.current + 1) % BWC_RADIO_TRACKS.length;
+      playTrackByIndex(nextIdx);
+    };
+
+    const handleTimeUpdate = () => {
+      if (audioRef.current) {
+        setCurrentTime(audioRef.current.currentTime);
+        if (audioRef.current.duration && !isNaN(audioRef.current.duration)) {
+          setDuration(audioRef.current.duration);
+        }
+      }
+    };
+
+    const handleLoadedMetadata = () => {
+      if (audioRef.current?.duration && !isNaN(audioRef.current.duration)) {
+        setDuration(audioRef.current.duration);
+      }
+    };
+
     const handleError = () => {
       setIsPlaying(false);
     };
 
     audioRef.current.addEventListener("ended", handleEnded);
+    audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
+    audioRef.current.addEventListener("loadedmetadata", handleLoadedMetadata);
     audioRef.current.addEventListener("error", handleError);
 
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current.removeEventListener("ended", handleEnded);
+        audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
+        audioRef.current.removeEventListener("loadedmetadata", handleLoadedMetadata);
         audioRef.current.removeEventListener("error", handleError);
         audioRef.current = null;
       }
     };
-  }, []);
+  }, [playTrackByIndex]);
 
   const togglePlay = () => {
     if (!audioRef.current) return;
@@ -62,9 +135,7 @@ export function AudioPlayerProvider({ children }: { children: React.ReactNode })
       audioRef.current
         .play()
         .then(() => setIsPlaying(true))
-        .catch(() => {
-          setIsPlaying(true);
-        });
+        .catch(() => setIsPlaying(false));
     }
   };
 
@@ -80,9 +151,7 @@ export function AudioPlayerProvider({ children }: { children: React.ReactNode })
       audioRef.current
         .play()
         .then(() => setIsPlaying(true))
-        .catch(() => {
-          setIsPlaying(true);
-        });
+        .catch(() => setIsPlaying(false));
     }
   };
 
@@ -91,6 +160,13 @@ export function AudioPlayerProvider({ children }: { children: React.ReactNode })
       audioRef.current.pause();
     }
     setIsPlaying(false);
+  };
+
+  const seekTo = (time: number) => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = time;
+      setCurrentTime(time);
+    }
   };
 
   const setVolume = (vol: number) => {
@@ -113,6 +189,15 @@ export function AudioPlayerProvider({ children }: { children: React.ReactNode })
         trackSubtitle,
         isVisible,
         setIsVisible,
+        tracks: BWC_RADIO_TRACKS,
+        currentTrackIndex,
+        currentTrack,
+        playNextTrack,
+        playPreviousTrack,
+        playTrackByIndex,
+        currentTime,
+        duration,
+        seekTo,
       }}
     >
       {children}
