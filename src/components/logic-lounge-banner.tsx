@@ -101,7 +101,7 @@ export function LogicLoungeBanner() {
                 <span>Coming Soon</span>
               </div>
               <h3 id="coming-soon-title" className="text-2xl sm:text-3xl font-display font-bold text-white">
-                BWC Lounge Mobile App
+                BWC Mobile App
               </h3>
               <p className="text-gray-300 text-sm mt-1.5 leading-relaxed">
                 Your portable sanctuary and companion for daily Christian growth is currently in final testing.
@@ -112,7 +112,7 @@ export function LogicLoungeBanner() {
             <div className="p-6 sm:p-8 space-y-6">
               <div className="space-y-3">
                 <p className="text-xs font-bold text-primary uppercase tracking-widest">
-                  What to expect in BWC Lounge:
+                  What to expect in BWC Mobile App:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="p-3.5 rounded-2xl bg-gray-50 border border-gray-100 flex items-start gap-3">
